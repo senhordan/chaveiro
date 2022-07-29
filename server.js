@@ -11,8 +11,8 @@ const fs = require('fs')
 
 const print = require('./modulos/print')
 
-usuario = 'senhor_dan'
-senha = '33417dan'
+usuario = 'admin'
+senha = '1sda51d1zxc31z5'
 
 app.use(session({
 	secret: 'djasndzxczxnjadkudasudnzlcmk',
@@ -34,7 +34,7 @@ const read_file = ()=>{
 }
 
 app.get('/', (req, res)=>{
-	if (true) {
+	if (req.session.usuario == usuario && req.session.senha == senha) {
 
 		io.on('connection', (socket) => {
 		  // console.log(`usuario ${socket.id}`);
