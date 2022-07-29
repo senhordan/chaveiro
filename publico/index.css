@@ -1,0 +1,26 @@
+body, html{
+  height: 97vh;
+}
+form * {
+	display: block;
+	margin-bottom: 1em;
+}
+label {
+	padding-top: .3em;
+	/*font-weight: bold;*/
+}
+#numero_da_chave{
+	width: 6em;
+	margin-left: 1em;
+}
+#localizar_chave{
+	margin-left: 1em;
+	width: auto;
+}
+#localização_da_chave{
+	margin-top: 1em;
+	/*display: none;*/
+}
+#localização_da_chave label{
+	font-weight: bold;
+}

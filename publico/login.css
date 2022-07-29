@@ -1,0 +1,12 @@
+body, html{
+  height: 97vh;
+}
+form * {
+	display: block;
+	margin-bottom: 1em;
+}
+label {
+	margin-bottom: .4em;
+	margin-left: .3em;
+	font-weight: bold;
+}
