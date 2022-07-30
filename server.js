@@ -94,11 +94,17 @@ app.get('/inventario', (req, res)=>{
 	if (req.session.usuario == usuario && req.session.senha == senha) {
 		io.on('connection', (socket) => {
 		  // console.log(`usuario ${socket.id}`);
-		  let keys = read_file()
 			socket.on('keys', ()=>{
 				let keys = read_file()
+	 			// keys.forEach(i=>{
+			  // 	if (key_number == Object.keys(i)[0]) {
+					// 	key_founded = i[Object.keys(i)[0]]
+			  // 	}
+			  // })
+			  
 				socket.emit('keys return', keys)
 			})
+
 		})
 
 		res.render('inventario')

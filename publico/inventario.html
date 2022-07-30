@@ -9,14 +9,72 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-	<input type="button" class="btn btn-primary w-auto" value="buscar">
+	<div class="row">
+		<input type="text" class="form-control w-auto" value="">
+		<input type="button" class="btn btn-primary w-auto" value="buscar">
+		<label class="form-label w-auto">Ordenar por:</label>
+		<select id="ordenar" class="w-auto" onchange="ordenar_chaves()">
+			<option value="crescente" selected>Menos chaves</option>
+			<option value="decrescente">Mais chaves</option>
+			<option value="painel">Ordem do painel</option>
+		</select>
+	</div>
+	<main id="chaves">
+		
+	</main>
 	<script src="/socket.io/socket.io.js"></script>
 	<script>
 	  const socket = io();
 
-	  socket.emit('keys')
-	  keys = socket.once('keys return', (obj)=>{
+		function decrescente( a, b ) {
+			const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
+			const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
+
+		  if ( a_total > b_total ){
+		    return -1;
+		  }
+		  if ( a_total < b_total ){
+		    return 1;
+		  }
+		  return 0;
+		}
+
+		function crescente( a, b ) {
+			const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
+			const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
+
+		  if ( a_total < b_total ){
+		    return -1;
+		  }
+		  if ( a_total > b_total ){
+		    return 1;
+		  }
+		  return 0;
+		}
+
+	  const ordenar_chaves = ()=>{
+		  socket.emit('keys')
+		  socket.once('keys return', (obj)=>{
+		  	switch (ordenar.value) {
+		  		case 'crescente':
+						console.log(obj.sort(crescente))
+		  			break;
+		  		case 'decrescente':
+						console.log(obj.sort(decrescente))
+		  			break;
+		  		case 'painel':
+						console.log(obj)
+		  			break;
+		  		default:
+		  			// statements_def
+		  			break;
+		  	}
+
 	  })
+		}
+
+
+	  
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
