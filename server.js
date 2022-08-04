@@ -92,7 +92,7 @@ app.get('/teste', (req, res)=>{
 
 app.get('/inventario', (req, res)=>{
 	if (req.session.usuario == usuario && req.session.senha == senha) {
-		io.on('connection', (socket) => {
+		io.once('connection', (socket) => {
 		  // console.log(`usuario ${socket.id}`);
 			socket.on('keys', ()=>{
 				let keys = read_file()
@@ -105,6 +105,9 @@ app.get('/inventario', (req, res)=>{
 				socket.emit('keys return', keys)
 			})
 
+			socket.once('disconnect', ()=>{
+				console.log(socket.id)
+			})
 		})
 
 		res.render('inventario')

@@ -1,26 +1,20 @@
-body, html{
-  height: 97vh;
+body{
+  height: 100vh;
 }
-form * {
-	display: block;
-	margin-bottom: 1em;
+#background{
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: none;
+  
+
 }
-label {
-	padding-top: .3em;
-	/*font-weight: bold;*/
+#container{
+  /*background-color: #fff;*/
+  /*padding: 5em;*/
+  display: none;
+  width: 25rem;
 }
-#numero_da_chave{
-	width: 6em;
-	margin-left: 1em;
-}
-#localizar_chave{
-	margin-left: 1em;
-	width: auto;
-}
-#localização_da_chave{
-	margin-top: 1em;
-	/*display: none;*/
-}
-#localização_da_chave label{
-	font-weight: bold;
+#chaves{
+	margin: 1em;
 }

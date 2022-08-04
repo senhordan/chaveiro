@@ -5,11 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Inventario</title>
-	<link rel="stylesheet" href="../publico/inventario.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="../publico/inventario.css">
 </head>
-<body>
-	<div class="row">
+<body class="position-relative">
+
+  <div id="background" class="position-absolute">
+  </div>
+
+  <div id="container" class="card position-absolute top-50 start-50 translate-middle border-dark">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item py-3"><h5 id="card_title">An item</h5></li>
+      <li class="list-group-item pb-3">A second item</li>
+      <li class="list-group-item py-3 text-end">
+        <input type="button" value="Confirmar" class="btn btn-primary">
+      </li>
+    </ul>
+  </div>
+
+	<div class="row w-auto mb-4" id="filtro">
 		<input type="text" class="form-control w-auto" value="">
 		<input type="button" class="btn btn-primary w-auto" value="buscar">
 		<label class="form-label w-auto">Ordenar por:</label>
@@ -17,65 +31,1323 @@
 			<option value="crescente" selected>Menos chaves</option>
 			<option value="decrescente">Mais chaves</option>
 			<option value="painel">Ordem do painel</option>
+			<option value="saidas">Mais saidas</option>
 		</select>
 	</div>
-	<main id="chaves">
-		
+<main class="d-flex justify-content-center">
+			<div id="chaves">
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-vago-1">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>vago-1</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-vago-2">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>vago-2</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-vago-3">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>vago-3</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-381">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>381</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-829">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>829</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-905">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>905</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-667">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>667</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-665">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>665</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-933">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>933</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-183">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>183</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1112">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1112</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1110">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1110</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-2">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>2</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1063">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1063</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-848">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>848</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-826">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>826</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-303">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>303</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1117">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1117</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1118">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1118</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1080">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1080</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1129">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1129</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-605">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>605</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1151">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1151</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1194">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1194</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-175">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>175</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-398">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>398</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-397">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>397</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-792">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>792</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-595">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>595</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-733">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>733</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-716">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>716</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-707">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>707</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1085">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1085</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-858">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>858</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-691">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>691</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-693">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>693</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-694">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>694</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-380">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>380</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1024">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1024</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-800">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>800</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-179">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>179</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-477">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>477</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1042">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1042</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-817">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>817</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1039">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1039</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-846">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>846</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1120">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1120</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-30">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>30</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1072">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1072</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-799">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>799</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-150">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>150</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1126">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1126</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-804">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>804</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-109">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>109</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-698">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>698</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1040">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1040</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-596">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>596</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-693">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>693</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-611">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>611</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-72">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>72</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-543">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>543</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-267">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>267</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1007">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1007</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-300">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>300</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>6</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1097">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1097</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-1030">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>1030</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-544">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>544</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-832">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>832</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-519">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>519</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-682">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>682</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-16">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>16</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>10</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-999">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>999</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f6</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>10</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-714">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>714</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>11</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>11</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-688">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>688</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g5</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>11</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-721">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>721</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>17</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>9</strong> Estoque:<strong>8</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-27">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>27</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>17</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="mb-2 me-2 d-inline-block w-auto">
+			  <div class="card">
+			    <div class="card-body" id="k-512">
+			    	<div class="text-center mb-2">
+			        <h2 class="card-title d-inline"><strong>512</strong></h2>
+			        <h6 class="d-inline">Gold</h6>
+			    	</div>
+			      <div class="card-text">
+			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k4</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>23</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>11</strong> Estoque:<strong>12</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+</div>
 	</main>
-	<script src="/socket.io/socket.io.js"></script>
-	<script>
-	  const socket = io();
-
-		function decrescente( a, b ) {
-			const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
-			const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
-
-		  if ( a_total > b_total ){
-		    return -1;
-		  }
-		  if ( a_total < b_total ){
-		    return 1;
-		  }
-		  return 0;
-		}
-
-		function crescente( a, b ) {
-			const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
-			const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
-
-		  if ( a_total < b_total ){
-		    return -1;
-		  }
-		  if ( a_total > b_total ){
-		    return 1;
-		  }
-		  return 0;
-		}
-
-	  const ordenar_chaves = ()=>{
-		  socket.emit('keys')
-		  socket.once('keys return', (obj)=>{
-		  	switch (ordenar.value) {
-		  		case 'crescente':
-						console.log(obj.sort(crescente))
-		  			break;
-		  		case 'decrescente':
-						console.log(obj.sort(decrescente))
-		  			break;
-		  		case 'painel':
-						console.log(obj)
-		  			break;
-		  		default:
-		  			// statements_def
-		  			break;
-		  	}
-
-	  })
-		}
-
-
-	  
-	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../publico/inventario.js"></script>
 </body>
 </html>
