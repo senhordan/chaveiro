@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="../publico/index.css">
 </head>
 <body>
-	<div class="d-flex justify-content-center">
-		<input type="button" class="btn btn-primary mt-4 w-auto" id="serviços" data-bs-toggle="modal" data-bs-target="#services" value="Serviços">
-	</div>
-	<div class="d-flex justify-content-center">
+	<!-- <div class="d-flex justify-content-center"> -->
+		<!-- <input type="button" class="btn btn-primary mt-4 w-auto" id="serviços" data-bs-toggle="modal" data-bs-target="#services" value="Serviços"> -->
+	<!-- </div> -->
+<!-- 	<div class="d-flex justify-content-center">
 		<input type="button" class="btn btn-primary mt-4 w-auto" id="popup_localizar_chave" data-bs-toggle="modal" data-bs-target="#keyLocate" value="Localizar Chave">
-	</div>
+	</div> -->
 	<div class="d-flex justify-content-center">
 		<a class="btn btn-primary mt-4 w-auto" href="/inventario" id="inventario">Inventario</a>
 	</div>
@@ -25,101 +25,45 @@
 	
 
 	<!-- keyLocate -->
-	<div class="modal fade" id="keyLocate" tabindex="-1" aria-labelledby="keyLocateLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="keyLocateLabel">Localizar Chave</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	      	<div class="d-flex flex-row">
-	      		<label class="form-label">Número:</label>
-		      	<input class="form-control" id="numero_da_chave" type="number">
-		      	<input class="btn btn-warning" id="localizar_chave" onclick="locate()" type="button" value="Localizar">
-	      	</div>
-	      	<div class="" id="localização_da_chave">
-	      	</div>
-	      </div>
-	      <!-- <div class="modal-footer"> -->
-	        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	<!-- <div class="modal fade" id="keyLocate" tabindex="-1" aria-labelledby="keyLocateLabel" aria-hidden="true"> -->
+	  <!-- <div class="modal-dialog modal-dialog-centered"> -->
+	    <!-- <div class="modal-content"> -->
+	      <!-- <div class="modal-header"> -->
+	        <!-- <h5 class="modal-title" id="keyLocateLabel">Localizar Chave</h5> -->
+	        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 	      <!-- </div> -->
-	    </div>
-	  </div>
-	</div>
+	      <!-- <div class="modal-body"> -->
+	      	<!-- <div class="d-flex flex-row"> -->
+	      		<!-- <label class="form-label">Número:</label> -->
+		      	<!-- <input class="form-control" id="numero_da_chave" type="number"> -->
+		      	<!-- <input class="btn btn-warning" id="localizar_chave" onclick="locate()" type="button" value="Localizar"> -->
+	      	<!-- </div> -->
+	      	<!-- <div class="" id="localização_da_chave"> -->
+	      	<!-- </div> -->
+	      <!-- </div> -->
+	    <!-- </div> -->
+	  <!-- </div> -->
+	<!-- </div> -->
 
-	<div class="modal fade" id="services" tabindex="-1" aria-labelledby="servicesLocateLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="servicesLocateLabel">Serviços</h5>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	      </div>
-	      <div class="modal-body">
-	      </div>
-	      <div class="modal-footer">
-	        <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
-	        <input type="button" class="btn btn-primary" value="Save changes">
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	<!-- <div class="modal fade" id="services" tabindex="-1" aria-labelledby="servicesLocateLabel" aria-hidden="true"> -->
+	  <!-- <div class="modal-dialog modal-dialog-centered"> -->
+	    <!-- <div class="modal-content"> -->
+	      <!-- <div class="modal-header"> -->
+	        <!-- <h5 class="modal-title" id="servicesLocateLabel">Serviços</h5> -->
+	        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+	      <!-- </div> -->
+	      <!-- <div class="modal-body"> -->
+	      <!-- </div> -->
+	      <!-- <div class="modal-footer"> -->
+	        <!-- <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close"> -->
+	        <!-- <input type="button" class="btn btn-primary" value="Save changes"> -->
+	      <!-- </div> -->
+	    <!-- </div> -->
+	  <!-- </div> -->
+	<!-- </div> -->
 
 	<script src="/socket.io/socket.io.js"></script>
-	<script>
-	  const socket = io();
-
-	  serviços.addEventListener('click', ()=>{
-
-	  })
-
-	  popup_localizar_chave.addEventListener('click', ()=>{
-	  	localização_da_chave.innerHTML = ''
-	  })
-
-	  numero_da_chave.addEventListener('keyup', (event)=>{
-	  	if (event.keyCode == 13) {
-	  		localizar_chave.click()
-	  	} 
-	  })
-
-	  const locate = ()=>{
-	  	let to_search = numero_da_chave.value
-	  	let key_number = to_search
-
-	  	numero_da_chave.value = ''
-	  	socket.emit('key number', to_search)
-	  	socket.once('key number return', (key_founded)=>{
-	  		if (key_founded) {
-		  		let linha = key_founded.linha
-		  		let coluna = key_founded.coluna
-		  		let painel = key_founded.painel
-		  		let estoque = key_founded.estoque
-		  		let marca = key_founded.marca
-
-		  		if (painel == 0) {
-		  			localização_da_chave.innerHTML = `<p><label>A chave ${key_number} não está no painel</label></p>`
-		  			if (estoque == 0) {
-			  			localização_da_chave.innerHTML = `<p><label>Não há chaves ${key_number} no estoque</label></p>`
-		  			}	else {
-		  			localização_da_chave.innerHTML += `<p><label>Quantidade de chaves no estoque: ${estoque}</label></p>`
-		  			localização_da_chave.innerHTML += `<p><label>Marca da chave: ${marca}</label></p>`
-		  			}
-		  		} else {
-		  			localização_da_chave.innerHTML = `<p>A chave ${key_number} está na posição: <label>${linha}${coluna}</label></p>`
-		  			localização_da_chave.innerHTML += `<p>Quantidade de chaves no painel: ${painel}</p>`
-		  			localização_da_chave.innerHTML += `<p>Quantidade de chaves no estoque: ${estoque}</p>`
-		  			localização_da_chave.innerHTML += `<p>Marca: ${marca}</p>`
-
-		  		}
-	  		} else {
-	  			localização_da_chave.innerHTML = `<label>Chave ${key_number} não encontrada</label>`
-	  		}
-	  	})
-	  }
-
-	</script>
+	<script src="../publico/index.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

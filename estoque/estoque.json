@@ -1,849 +1,1003 @@
 [
-	{
-		"846":{
-			"linha": "a",
-			"coluna": 1,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1112":{
-			"linha": "a",
-			"coluna": 2,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1110":{
-			"linha": "a",
-			"coluna": 3,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"611":{
-			"linha": "a",
-			"coluna": 4,
-			"painel": 5,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"72":{
-			"linha": "a",
-			"coluna": 5,
-			"painel": 5,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"2":{
-			"linha": "a",
-			"coluna": 6,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"380":{
-			"linha": "a",
-			"coluna": 7,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"544":{
-			"linha": "b",
-			"coluna": 1,
-			"painel": 8,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"543":{
-			"linha": "b",
-			"coluna": 2,
-			"painel": 5,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"721":{
-			"linha": "b",
-			"coluna": 3,
-			"painel": 9,
-			"estoque": 8,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1120":{
-			"linha": "b",
-			"coluna": 4,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1024":{
-			"linha": "b",
-			"coluna": 5,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"267":{
-			"linha": "b",
-			"coluna": 6,
-			"painel": 5,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"vago-1":{
-			"linha": "b",
-			"coluna": 7,
-			"painel": 0,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"714":{
-			"linha": "c",
-			"coluna": 1,
-			"painel": 11,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"800":{
-			"linha": "c",
-			"coluna": 2,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"30":{
-			"linha": "c",
-			"coluna": 3,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1063":{
-			"linha": "c",
-			"coluna": 4,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"vago-2":{
-			"linha": "c",
-			"coluna": 5,
-			"painel": 0,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"848":{
-			"linha": "c",
-			"coluna": 6,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"381":{
-			"linha": "c",
-			"coluna": 7,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1072":{
-			"linha": "d",
-			"coluna": 1,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"826":{
-			"linha": "d",
-			"coluna": 2,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"799":{
-			"linha": "d",
-			"coluna": 3,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"303":{
-			"linha": "d",
-			"coluna": 4,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1117":{
-			"linha": "d",
-			"coluna": 5,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"150":{
-			"linha": "d",
-			"coluna": 6,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1118":{
-			"linha": "d",
-			"coluna": 7,
-			"painel": 2 ,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1126":{
-			"linha": "e",
-			"coluna": 1,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"179":{
-			"linha": "e",
-			"coluna": 2,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"804":{
-			"linha": "e",
-			"coluna": 3,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1097":{
-			"linha": "e",
-			"coluna": 4,
-			"painel": 7,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"832":{
-			"linha": "e",
-			"coluna": 5,
-			"painel": 4,
-			"estoque": 4,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"300":{
-			"linha": "e",
-			"coluna": 6,
-			"painel": 6,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"16":{
-			"linha": "e",
-			"coluna": 7,
-			"painel": 10,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1080":{
-			"linha": "f",
-			"coluna": 1,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1129":{
-			"linha": "f",
-			"coluna": 2,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"519":{
-			"linha": "f",
-			"coluna": 3,
-			"painel": 8,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"477":{
-			"linha": "f",
-			"coluna": 4,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1030":{
-			"linha": "f",
-			"coluna": 5,
-			"painel": 7,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"999":{
-			"linha": "f",
-			"coluna": 6,
-			"painel": 10,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"27":{
-			"linha": "f",
-			"coluna": 7,
-			"painel": 10,
-			"estoque": 7,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"605":{
-			"linha": "g",
-			"coluna": 1,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1151":{
-			"linha": "g",
-			"coluna": 2,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"109":{
-			"linha": "g",
-			"coluna": 3,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1194":{
-			"linha": "g",
-			"coluna": 4,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"688":{
-			"linha": "g",
-			"coluna": 5,
-			"painel": 8,
-			"estoque": 3,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"682":{
-			"linha": "g",
-			"coluna": 6,
-			"painel": 8,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"698":{
-			"linha": "g",
-			"coluna": 7,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1040":{
-			"linha": "h",
-			"coluna": 1,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"596":{
-			"linha": "h",
-			"coluna": 2,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1007":{
-			"linha": "h",
-			"coluna": 3,
-			"painel": 5,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1042":{
-			"linha": "h",
-			"coluna": 4,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"175":{
-			"linha": "h",
-			"coluna": 5,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"398":{
-			"linha": "h",
-			"coluna": 6,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"397":{
-			"linha": "h",
-			"coluna": 7,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"792":{
-			"linha": "i",
-			"coluna": 1,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"595":{
-			"linha": "i",
-			"coluna": 2,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"817":{
-			"linha": "i",
-			"coluna": 3,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"829":{
-			"linha": "i",
-			"coluna": 4,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"733":{
-			"linha": "i",
-			"coluna": 5,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"716":{
-			"linha": "i",
-			"coluna": 6,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"905":{
-			"linha": "i",
-			"coluna": 7,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"667":{
-			"linha": "j",
-			"coluna": 1,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"665":{
-			"linha": "j",
-			"coluna": 2,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"933":{
-			"linha": "j",
-			"coluna": 3,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"183":{
-			"linha": "j",
-			"coluna": 4,
-			"painel": 1,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"vago-3":{
-			"linha": "j",
-			"coluna": 5,
-			"painel": 0,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"707":{
-			"linha": "j",
-			"coluna": 6,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1085":{
-			"linha": "j",
-			"coluna": 7,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"858":{
-			"linha": "k",
-			"coluna": 1,
-			"painel": 2,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"1039":{
-			"linha": "k",
-			"coluna": 2,
-			"painel": 3,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"693":{
-			"linha": "k",
-			"coluna": 3,
-			"painel": 4,
-			"estoque": 0,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"512":{
-			"linha": "k",
-			"coluna": 4,
-			"painel": 11,
-			"estoque": 12,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"691":{
-			"linha": "000",
-			"coluna": 0,
-			"painel": 0,
-			"estoque": 2,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"693":{
-			"linha": "000",
-			"coluna": 0,
-			"painel": 0,
-			"estoque": 2,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	},
-	{
-		"694":{
-			"linha": "000",
-			"coluna": 0,
-			"painel": 0,
-			"estoque": 2,
-			"marca":"Gold",
-			"similares": [],
-			"saidas": 0
-		}
-	}
+  {
+    "key": {
+      "numero": "846",
+      "linha": "a",
+      "coluna": 1,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1112",
+      "linha": "a",
+      "coluna": 2,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1110",
+      "linha": "a",
+      "coluna": 3,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "611",
+      "linha": "a",
+      "coluna": 4,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "72",
+      "linha": "a",
+      "coluna": 5,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "2",
+      "linha": "a",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "380",
+      "linha": "a",
+      "coluna": 7,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "544",
+      "linha": "b",
+      "coluna": 1,
+      "painel": 8,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "543",
+      "linha": "b",
+      "coluna": 2,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "721",
+      "linha": "b",
+      "coluna": 3,
+      "painel": 9,
+      "estoque": 8,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1120",
+      "linha": "b",
+      "coluna": 4,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1024",
+      "linha": "b",
+      "coluna": 5,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "267",
+      "linha": "b",
+      "coluna": 6,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "vago-1",
+      "linha": "b",
+      "coluna": 7,
+      "painel": 0,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "714",
+      "linha": "c",
+      "coluna": 1,
+      "painel": 11,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "800",
+      "linha": "c",
+      "coluna": 2,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "30",
+      "linha": "c",
+      "coluna": 3,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1063",
+      "linha": "c",
+      "coluna": 4,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "vago-2",
+      "linha": "c",
+      "coluna": 5,
+      "painel": 0,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "848",
+      "linha": "c",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "381",
+      "linha": "c",
+      "coluna": 7,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1072",
+      "linha": "d",
+      "coluna": 1,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "826",
+      "linha": "d",
+      "coluna": 2,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "799",
+      "linha": "d",
+      "coluna": 3,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "303",
+      "linha": "d",
+      "coluna": 4,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1117",
+      "linha": "d",
+      "coluna": 5,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "150",
+      "linha": "d",
+      "coluna": 6,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1118",
+      "linha": "d",
+      "coluna": 7,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1126",
+      "linha": "e",
+      "coluna": 1,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "179",
+      "linha": "e",
+      "coluna": 2,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "804",
+      "linha": "e",
+      "coluna": 3,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1097",
+      "linha": "e",
+      "coluna": 4,
+      "painel": 7,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "832",
+      "linha": "e",
+      "coluna": 5,
+      "painel": 4,
+      "estoque": 4,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "300",
+      "linha": "e",
+      "coluna": 6,
+      "painel": 6,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "16",
+      "linha": "e",
+      "coluna": 7,
+      "painel": 10,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1080",
+      "linha": "f",
+      "coluna": 1,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1129",
+      "linha": "f",
+      "coluna": 2,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "519",
+      "linha": "f",
+      "coluna": 3,
+      "painel": 8,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "477",
+      "linha": "f",
+      "coluna": 4,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1030",
+      "linha": "f",
+      "coluna": 5,
+      "painel": 7,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "999",
+      "linha": "f",
+      "coluna": 6,
+      "painel": 10,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "27",
+      "linha": "f",
+      "coluna": 7,
+      "painel": 10,
+      "estoque": 7,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "605",
+      "linha": "g",
+      "coluna": 1,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1151",
+      "linha": "g",
+      "coluna": 2,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "109",
+      "linha": "g",
+      "coluna": 3,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1194",
+      "linha": "g",
+      "coluna": 4,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "688",
+      "linha": "g",
+      "coluna": 5,
+      "painel": 8,
+      "estoque": 3,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "682",
+      "linha": "g",
+      "coluna": 6,
+      "painel": 7,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "698",
+      "linha": "g",
+      "coluna": 7,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1040",
+      "linha": "h",
+      "coluna": 1,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "596",
+      "linha": "h",
+      "coluna": 2,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1007",
+      "linha": "h",
+      "coluna": 3,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1042",
+      "linha": "h",
+      "coluna": 4,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "175",
+      "linha": "h",
+      "coluna": 5,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "398",
+      "linha": "h",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "397",
+      "linha": "h",
+      "coluna": 7,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "792",
+      "linha": "i",
+      "coluna": 1,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "595",
+      "linha": "i",
+      "coluna": 2,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "817",
+      "linha": "i",
+      "coluna": 3,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "829",
+      "linha": "i",
+      "coluna": 4,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "733",
+      "linha": "i",
+      "coluna": 5,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "716",
+      "linha": "i",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "905",
+      "linha": "i",
+      "coluna": 7,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "667",
+      "linha": "j",
+      "coluna": 1,
+      "painel": 0,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "665",
+      "linha": "j",
+      "coluna": 2,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "933",
+      "linha": "j",
+      "coluna": 3,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "183",
+      "linha": "j",
+      "coluna": 4,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "vago-3",
+      "linha": "j",
+      "coluna": 5,
+      "painel": 0,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "707",
+      "linha": "j",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1085",
+      "linha": "j",
+      "coluna": 7,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "858",
+      "linha": "k",
+      "coluna": 1,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1039",
+      "linha": "k",
+      "coluna": 2,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "693",
+      "linha": "k",
+      "coluna": 3,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "512",
+      "linha": "k",
+      "coluna": 4,
+      "painel": 11,
+      "estoque": 12,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "691",
+      "linha": "000",
+      "coluna": 0,
+      "painel": 0,
+      "estoque": 2,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "693",
+      "linha": "000",
+      "coluna": 0,
+      "painel": 0,
+      "estoque": 2,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "694",
+      "linha": "000",
+      "coluna": 0,
+      "painel": 0,
+      "estoque": 2,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "saidas": 0
+    }
+  }
 ]

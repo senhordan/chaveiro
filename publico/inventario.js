@@ -2,7 +2,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 const socket = io();
 
-chaves.addEventListener('click', event=>{
+chaves.addEventListener('dblclick', event=>{
   event.path.forEach(i=>{
    try {
     if (i.id.includes('k-')) {
@@ -12,40 +12,76 @@ chaves.addEventListener('click', event=>{
 		  filtro.style.display = 'none'
 		  chaves.style.display = 'none'
 		  card_title.innerText = card_number
+
+			socket.emit('keys')
+		  socket.once('keys return', (obj)=>{
+		  	obj.forEach(key=>{
+		  		if (key.key.numero == card_number) {
+		  			console.log(key.key.numero)
+		  			input_numero.value = key.key.numero
+		  			input_quantidade_painel.value = key.key.painel
+		  			input_quantidade_estoque.value = key.key.estoque
+						input_similares.value = key.key.similares.toString()
+		  		}
+		  	})
+		  })
     }
    } catch (error) {
    }
   })
 })
-background.addEventListener('click', ()=>{
+
+const fechar_popup = ()=>{
   background.style.display = 'none'
   container.style.display = 'none'
   filtro.style.display = ''
   chaves.style.display = ''
+  document.querySelector(`#k-${card_title.innerText}`).scrollIntoView();
+
+}
+
+background.addEventListener('click', fechar_popup)
+fechar_popup2.addEventListener('click', fechar_popup)
+
+
+numero_a_filtrar.addEventListener('input', ()=>{
+	
+	document.querySelectorAll('.card_div').forEach(element=>{
+		card_body = element.querySelector('.card-body')
+		// console.log(card_body.id.includes(numero_a_filtrar.value))
+
+		if (card_body.id.includes(numero_a_filtrar.value)) {
+			element.style.display = 'inline-block'
+			// document.querySelector('.card_div').classList.remove('d-none')
+			// document.querySelector('.card_div').classList.add('d-inline-block')
+		} else {
+			element.style.display = 'none'
+			// document.querySelector('.card_div').classList.remove('d-inline-block')
+			// document.querySelector('.card_div').classList.add('d-none')
+		}
+	})
+	// let genero = document.querySelector('[name="genero"]')
+	// let vestes = document.querySelector('[name="vestes"]')
+	// let input = document.querySelector('[name="filtrar_nome_input"]')
+	// let input_value = document.querySelector('[name="filtrar_nome_input"]').value.toLowerCase()
+	// genero.value = vestes.value = 'todos'
+
+	// document.querySelectorAll('.img').forEach(div=>{
+	// 	let button = div.querySelector('button')
+	// 	button_name = button.name.replace(/_/g, ' ')
+
+	// 	if (button_name.includes(input_value)) {
+	// 		div.style.display = 'inline-block'
+	// 	} else {
+	// 		div.style.display = 'none'
+	// 	}
+	// })
+
 })
 
-// chaves.addEventListener('click', event=>{
-//   event.path.forEach(i=>{
-//    try {
-//     if (i.id.includes('k-')) {
-// 	    console.log(i.id.slice(2))
-
-// 	    // document.createElement()
-// 			// <input type="button" class="btn btn-primary mt-4 w-auto" id="serviços" data-bs-toggle="modal" data-bs-target="#services" value="Serviços">
-
-//     }
-//     }
-//    } catch (error) {
-//    }
-//   })
-//    } catch (error) {
-//    }
-//   })
-// })
-
-function decrescente( a, b ) {
-	const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
-	const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
+const decrescente = ( a, b )=>{
+	const a_total =  a.key.painel+a.key.estoque
+	const b_total =  b.key.painel+b.key.estoque
 
   if ( a_total > b_total ){
     return -1;
@@ -56,9 +92,9 @@ function decrescente( a, b ) {
   return 0;
 }
 
-function saidas( a, b ) {
-	const a_total =  Object.values(a)[0].saidas
-	const b_total =  Object.values(b)[0].saidas
+const saidas = ( a, b )=>{
+	const a_total =  a.key.saidas
+	const b_total =  b.key.saidas
 
   if ( a_total > b_total ){
     return -1;
@@ -69,9 +105,9 @@ function saidas( a, b ) {
   return 0;
 }
 
-function crescente( a, b ) {
-	const a_total =  Object.values(a)[0].painel+Object.values(a)[0].estoque
-	const b_total =  Object.values(b)[0].painel+Object.values(b)[0].estoque
+const crescente = ( a, b )=>{
+	const a_total =  a.key.painel+a.key.estoque
+	const b_total =  b.key.painel+b.key.estoque
 
   if ( a_total < b_total ){
     return -1;
@@ -105,19 +141,21 @@ const ordenar_chaves = ()=>{
   	}
   	chaves.innerHTML = ''
 		ordem.forEach(obj=>{
+			console.log()
 			// console.log(Object.keys(obj)[0])
 			// console.log(Object.values(obj)[0])
-			key_number = Object.keys(obj)[0]
-			key_posição = `${Object.values(obj)[0].linha}${Object.values(obj)[0].coluna}`
-			// key_linha = Object.values(obj)[0].linha
-			// key_coluna = Object.values(obj)[0].coluna
-			key_quantidade = Object.values(obj)[0].painel+Object.values(obj)[0].estoque
-			key_painel = Object.values(obj)[0].painel
-			key_estoque = Object.values(obj)[0].estoque
-			key_marca = Object.values(obj)[0].marca
-			key_saidas = Object.values(obj)[0].saidas
+			key_number = obj.key.numero
+			key_posição = `${obj.key.linha}${obj.key.coluna}`
+			// key_linha = obj.key.linha
+			// key_coluna = obj.key.coluna
+			key_quantidade = obj.key.painel+obj.key.estoque
+			key_painel = obj.key.painel
+			key_estoque = obj.key.estoque
+			key_marca = obj.key.marca
+			key_saidas = obj.key.saidas
+			key_similares = obj.key.similares.toString()
 			let element = `
-			<div class="mb-2 me-2 d-inline-block w-auto">
+			<div class="mb-2 me-2 w-auto card_div">
 			  <div class="card">
 			    <div class="card-body" id="k-${key_number}">
 			    	<div class="text-center mb-2">
@@ -129,6 +167,7 @@ const ordenar_chaves = ()=>{
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>${key_quantidade}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>${key_painel}</strong> Estoque:<strong>${key_estoque}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>${key_saidas}</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Similares: <strong>${key_similares}</strong></p>
 			      </div>
 			    </div>
 			  </div>
