@@ -44,40 +44,38 @@ background.addEventListener('click', fechar_popup)
 fechar_popup2.addEventListener('click', fechar_popup)
 
 
+
+
 numero_a_filtrar.addEventListener('input', ()=>{
 	
 	document.querySelectorAll('.card_div').forEach(element=>{
 		card_body = element.querySelector('.card-body')
-		// console.log(card_body.id.includes(numero_a_filtrar.value))
 
 		if (card_body.id.includes(numero_a_filtrar.value)) {
 			element.style.display = 'inline-block'
-			// document.querySelector('.card_div').classList.remove('d-none')
-			// document.querySelector('.card_div').classList.add('d-inline-block')
 		} else {
 			element.style.display = 'none'
-			// document.querySelector('.card_div').classList.remove('d-inline-block')
-			// document.querySelector('.card_div').classList.add('d-none')
 		}
 	})
-	// let genero = document.querySelector('[name="genero"]')
-	// let vestes = document.querySelector('[name="vestes"]')
-	// let input = document.querySelector('[name="filtrar_nome_input"]')
-	// let input_value = document.querySelector('[name="filtrar_nome_input"]').value.toLowerCase()
-	// genero.value = vestes.value = 'todos'
-
-	// document.querySelectorAll('.img').forEach(div=>{
-	// 	let button = div.querySelector('button')
-	// 	button_name = button.name.replace(/_/g, ' ')
-
-	// 	if (button_name.includes(input_value)) {
-	// 		div.style.display = 'inline-block'
-	// 	} else {
-	// 		div.style.display = 'none'
-	// 	}
-	// })
 
 })
+const filtrar_tranca = ()=>{
+	console.log(tranca.value)
+	document.querySelectorAll('.card_div').forEach(element=>{
+		card_body = element.querySelector('.card-body')
+		if (tranca.value == 'todas') {
+			element.style.display = 'inline-block'
+		} else {
+			if (card_body.dataset.tranca_tipo == '' || card_body.dataset.tranca_tipo == tranca.value) {
+				console.log(card_body.dataset.tranca_tipo)
+				element.style.display = 'inline-block'
+			} else {
+				element.style.display = 'none'
+			}
+		}
+	})
+
+}
 
 const decrescente = ( a, b )=>{
 	const a_total =  a.key.painel+a.key.estoque
@@ -153,21 +151,31 @@ const ordenar_chaves = ()=>{
 			key_estoque = obj.key.estoque
 			key_marca = obj.key.marca
 			key_saidas = obj.key.saidas
+			key_tipo = obj.key.tipo
+			key_tranca_tipo = obj.key.tranca[0]
+			key_tranca_marca = obj.key.tranca[1]
 			key_similares = obj.key.similares.toString()
+			if (key_tipo == 'yale') {
+
+				key_formato = `<div class="text-center mb-2">
+	      	<img src="../publico/shape/${key_number}.svg" alt="">
+	    	</div>`
+			}
 			let element = `
 			<div class="mb-2 me-2 w-auto card_div">
 			  <div class="card">
-			    <div class="card-body" id="k-${key_number}">
+			    <div class="card-body" id="k-${key_number}" data-tranca_tipo="${key_tranca_tipo}" data-tranca_marca="${key_tranca_marca}" >
 			    	<div class="text-center mb-2">
 			        <h2 class="card-title d-inline"><strong>${key_number}</strong></h2>
 			        <h6 class="d-inline">${key_marca}</h6>
 			    	</div>
 			      <div class="card-text">
+			      	${key_formato}
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>${key_tipo}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>${key_posição}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>${key_quantidade}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>${key_painel}</strong> Estoque:<strong>${key_estoque}</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>${key_saidas}</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong>${key_similares}</strong></p>
 			      </div>
 			    </div>
 			  </div>

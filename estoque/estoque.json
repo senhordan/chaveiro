@@ -9,6 +9,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -22,6 +26,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -35,6 +43,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -48,6 +60,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -61,6 +77,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Aliança"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -74,6 +94,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -87,6 +111,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Haga"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -100,6 +128,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -113,6 +145,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -126,6 +162,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Imab"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -139,6 +179,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Gold"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -152,6 +196,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Amelco"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -165,6 +213,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Haga"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -178,6 +230,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -191,6 +247,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "HDL"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -204,6 +264,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Haga"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -217,6 +281,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Fama"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -230,6 +298,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "HDL"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -243,6 +315,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -256,6 +332,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Amelco"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -269,6 +349,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Haga"],
+      "formato": "ci",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -282,6 +366,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Gold"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -295,6 +383,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "3F"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -308,6 +400,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -321,6 +417,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Fama"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -334,6 +434,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Hela"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -342,11 +446,15 @@
       "numero": "150",
       "linha": "d",
       "coluna": 6,
-      "painel": 4,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Papaiz"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -360,6 +468,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Hela"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -373,6 +485,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "3F"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -381,11 +497,15 @@
       "numero": "179",
       "linha": "e",
       "coluna": 2,
-      "painel": 3,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -399,6 +519,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "3F"],
+      "formato": "ai",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -412,6 +536,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Soprano"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -425,6 +553,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Arouca"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -438,6 +570,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Pado"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -451,6 +587,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "La Fonte"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -464,6 +604,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "MGM"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -477,6 +621,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Haga"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -490,6 +638,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Papaiz"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -503,6 +655,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Aliança"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -516,6 +672,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Stam"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -529,6 +689,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Stam"],
+      "formato": "ae",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -542,6 +706,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -555,6 +723,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Stam"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -568,6 +740,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Soprano"],
+      "formato": "ci",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -581,6 +757,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Pacri"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -594,6 +774,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Soprano"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -607,6 +791,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -620,6 +808,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -633,6 +825,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Brasil"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -646,6 +842,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "3F"],
+      "formato": "a",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -659,6 +859,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Gold"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -672,6 +876,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "MGM"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -685,6 +893,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "kwikset"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -698,6 +910,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -711,6 +927,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Lockwell"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -724,6 +944,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Soprano"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -737,6 +961,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Soprano"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -750,6 +978,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Gold"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -763,6 +995,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Arouca"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -776,6 +1012,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "3F"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -789,6 +1029,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Globe"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -802,6 +1046,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["cadeado", "Papaiz"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -815,6 +1063,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -828,6 +1080,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -841,6 +1097,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -854,6 +1114,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -867,6 +1131,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -880,6 +1148,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", ""],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -893,6 +1165,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -906,6 +1182,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "MGM"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -919,6 +1199,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "La Fonte"],
+      "formato": "b",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -932,6 +1216,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Lockwell"],
+      "formato": "outros",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -945,6 +1233,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "c",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -958,6 +1250,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["fechadura", "Brasil"],
+      "formato": "be",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -971,6 +1267,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "ce",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -984,6 +1284,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   },
@@ -997,6 +1301,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
+      "tranca": ["", "Pado"],
+      "formato": "cei",
+      "comprimento": "",
+      "altura": "",
       "saidas": 0
     }
   }

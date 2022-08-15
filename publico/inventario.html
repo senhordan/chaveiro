@@ -29,10 +29,6 @@
 						  <span class="input-group-text" >Quantidade no Estoque</span>
 						  <input type="number" class="form-control" id="input_quantidade_estoque" name="quantidade_estoque" placeholder="">
 						</div>
-						<div class="input-group mb-3">
-						  <span class="input-group-text" >Similares</span>
-						  <input type="text" class="form-control" id="input_similares" name="similares" placeholder="" value="">
-						</div>
 		     	<h6 class="alert alert-warning">Aviso!! Essas alterações não serão registradas nos serviços.</h6>
       		<div class="text-end">
 		        <input type="button" value="Cancelar" id="fechar_popup2" class="btn btn-secondary">
@@ -50,11 +46,24 @@
 		</div>
 		<label class="form-label w-auto mb-2">Ordenar por: </label>
 		<select id="ordenar" class="w-auto" onchange="ordenar_chaves()">
+			<option selected value="saidas">Mais saidas</option>
+			<option value="crescente">Menos chaves</option>
+			<option value="decrescente">Mais chaves</option>
+			<option value="painel">Ordem do painel</option>
+		</select>
+		<label class="form-label w-auto mb-2">Tranca: </label>
+		<select id="tranca" class="w-auto" onchange="filtrar_tranca()">
+			<option selected value="todas">Cadeado/Fechadura</option>
+			<option value="cadeado">Cadeado</option>
+			<option value="fechadura">Fechadura</option>
+		</select>
+	<!-- 	<label class="form-label w-auto mb-2">Tranca: </label>
+		<select id="ordenar" class="w-auto" onchange="filtrar_tranca()">
 			<option value="crescente">Menos chaves</option>
 			<option value="decrescente">Mais chaves</option>
 			<option value="painel">Ordem do painel</option>
 			<option selected value="saidas">Mais saidas</option>
-		</select>
+		</select> -->
 	</div>
 <main class="d-flex justify-content-center">
 			<div id="chaves">
@@ -66,11 +75,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/846.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -84,11 +96,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1112.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -102,11 +117,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1110.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -120,11 +138,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/611.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -138,11 +159,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/72.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -156,11 +180,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/2.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -174,11 +201,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/380.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>a7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -192,11 +222,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/544.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -210,11 +243,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/543.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -228,11 +264,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/721.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>17</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>9</strong> Estoque:<strong>8</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -246,11 +285,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1120.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -264,11 +306,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1024.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -282,11 +327,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/267.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -300,11 +348,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/vago-1.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>b7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -318,11 +369,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/714.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>11</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>11</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -336,11 +390,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/800.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -354,11 +411,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/30.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -372,11 +432,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1063.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -390,11 +453,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/vago-2.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -408,11 +474,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/848.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -426,11 +495,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/381.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>c7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -444,11 +516,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1072.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -462,11 +537,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/826.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -480,11 +558,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/799.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -498,11 +579,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/303.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -516,11 +600,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1117.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -534,11 +621,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/150.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d6</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -552,11 +642,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1118.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>d7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -570,11 +663,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1126.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -588,11 +684,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/179.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e2</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -606,11 +705,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/804.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -624,11 +726,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1097.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -642,11 +747,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/832.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -660,11 +768,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/300.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>6</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -678,11 +789,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/16.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>e7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>10</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -696,11 +810,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1080.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -714,11 +831,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1129.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -732,11 +852,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/519.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -750,11 +873,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/477.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -768,11 +894,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1030.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -786,11 +915,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/999.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>10</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -804,11 +936,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/27.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>f7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>17</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>10</strong> Estoque:<strong>7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -822,11 +957,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/605.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -840,11 +978,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1151.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -858,11 +999,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/109.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -876,11 +1020,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1194.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -894,11 +1041,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/688.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>11</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -912,11 +1062,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/682.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g6</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>8</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>7</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -930,11 +1083,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/698.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>g7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -948,11 +1104,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1040.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -966,11 +1125,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/596.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -984,11 +1146,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1007.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1002,11 +1167,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1042.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1020,11 +1188,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/175.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1038,11 +1209,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/398.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1056,11 +1230,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/397.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>h7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1074,11 +1251,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/792.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1092,11 +1272,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/595.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1110,11 +1293,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/817.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1128,11 +1314,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/829.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1146,11 +1335,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/733.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1164,11 +1356,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1182,11 +1377,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>tetra</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>i7</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1200,11 +1398,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>tetra</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j1</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1218,11 +1419,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>tetra</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1236,11 +1440,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>tetra</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1254,11 +1461,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/716.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>tetra</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1272,11 +1482,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/vago-3.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j5</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1290,11 +1503,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/707.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j6</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1308,11 +1524,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1085.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>j7</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>1</strong></p>
+			      	<p class="mb-0 text-decoration-underline">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1326,11 +1545,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/858.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k1</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1344,11 +1566,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/1039.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1362,11 +1587,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/693.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k3</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1380,11 +1608,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/512.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>k4</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>23</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>11</strong> Estoque:<strong>12</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1398,11 +1629,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/691.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1416,11 +1650,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/693.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>
@@ -1434,11 +1671,14 @@
 			        <h6 class="d-inline">Gold</h6>
 			    	</div>
 			      <div class="card-text">
+			      	<div class="text-center mb-2">
+	      	<img src="../publico/shape/694.svg" alt="">
+	    	</div>
+			      	<p class="mb-0 text-decoration-underline">Tipo: <strong>yale</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Posição: <strong>0000</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Quantidade: <strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
 			      	<p class="mb-0 text-decoration-underline">Saidas: <strong>0</strong></p>
-			      	<p class="mb-0 text-decoration-underline">Similares: <strong></strong></p>
 			      </div>
 			    </div>
 			  </div>

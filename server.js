@@ -43,7 +43,33 @@ const create_backup = (arg)=>{
 	fs.copyFile('./estoque/estoque.json', `./estoque/backups/${arg}_${backups+1}_estoque.json`, ()=>{})
 };
 // create_backup()
-// (()=>{teste
+(()=>{
+	const file = read_file()
+	let quantidade_yale = 0
+	let quantidade_tetra = 0
+	file.forEach(obj=>{
+		// console.log(obj.key)
+		const total_chaves = obj.key.painel+obj.key.estoque
+		if (!obj.key.numero.includes('vago')) {
+			if (obj.key.tipo == 'yale') {
+				if (total_chaves < 5) {
+					let faltam = 5-total_chaves
+					quantidade_yale += faltam
+					console.log(`yale	${obj.key.numero}	faltam ${faltam} `)
+				}
+			} else if (obj.key.tipo == 'tetra') {
+				if (total_chaves < 3) {
+					let faltam = 3-total_chaves
+					quantidade_tetra += faltam
+					console.log(`tetra	${obj.key.numero}	faltam ${faltam} `)
+				}
+				
+			}
+		}
+	})
+	console.log(`${quantidade_yale} chaves yale * R$1,8 = ${quantidade_yale * 1.8}`)
+	console.log(`${quantidade_tetra} chaves tetra * R$5 = ${quantidade_tetra * 5}`)
+})();
 
 app.get('/', (req, res)=>{
 	if (req.session.usuario == usuario && req.session.senha == senha) {
@@ -126,9 +152,6 @@ app.post('/inventario', (req, res)=>{
 				key.key.numero = req.body.numero
 				key.key.painel = Number(req.body.quantidade_painel)
 				key.key.estoque = Number(req.body.quantidade_estoque)
-				if (req.body.similares != '') {
-					key.key.similares = req.body.similares.split(',')
-				}
 				console.log(key.key)
 				fs.writeFileSync('./estoque/estoque.json', JSON.stringify(keys))	
 			}
