@@ -9,7 +9,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -26,7 +29,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -43,7 +49,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -60,7 +69,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -77,7 +89,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Aliança"],
+      "tranca": [
+        "",
+        "Aliança"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -94,7 +109,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -111,7 +129,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Haga"],
+      "tranca": [
+        "fechadura",
+        "Haga"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -128,7 +149,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -145,7 +169,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -162,7 +189,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Imab"],
+      "tranca": [
+        "",
+        "Imab"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -179,7 +209,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Gold"],
+      "tranca": [
+        "fechadura",
+        "Gold"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -196,7 +229,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Amelco"],
+      "tranca": [
+        "",
+        "Amelco"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -213,7 +249,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Haga"],
+      "tranca": [
+        "",
+        "Haga"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -230,7 +269,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -247,7 +289,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "HDL"],
+      "tranca": [
+        "",
+        "HDL"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -264,7 +309,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Haga"],
+      "tranca": [
+        "fechadura",
+        "Haga"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -281,7 +329,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Fama"],
+      "tranca": [
+        "",
+        "Fama"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -298,7 +349,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "HDL"],
+      "tranca": [
+        "",
+        "HDL"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -315,7 +369,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -332,7 +389,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Amelco"],
+      "tranca": [
+        "",
+        "Amelco"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -349,7 +409,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Haga"],
+      "tranca": [
+        "fechadura",
+        "Haga"
+      ],
       "formato": "ci",
       "comprimento": "",
       "altura": "",
@@ -366,7 +429,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Gold"],
+      "tranca": [
+        "cadeado",
+        "Gold"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -383,7 +449,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "3F"],
+      "tranca": [
+        "fechadura",
+        "3F"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -400,7 +469,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -417,7 +489,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Fama"],
+      "tranca": [
+        "",
+        "Fama"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -434,7 +509,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Hela"],
+      "tranca": [
+        "fechadura",
+        "Hela"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -451,7 +529,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Papaiz"],
+      "tranca": [
+        "fechadura",
+        "Papaiz"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -468,7 +549,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Hela"],
+      "tranca": [
+        "fechadura",
+        "Hela"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -485,7 +569,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "3F"],
+      "tranca": [
+        "fechadura",
+        "3F"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -502,7 +589,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -519,7 +609,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "3F"],
+      "tranca": [
+        "",
+        "3F"
+      ],
       "formato": "ai",
       "comprimento": "",
       "altura": "",
@@ -536,7 +629,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Soprano"],
+      "tranca": [
+        "",
+        "Soprano"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -553,7 +649,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Arouca"],
+      "tranca": [
+        "fechadura",
+        "Arouca"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -570,7 +669,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Pado"],
+      "tranca": [
+        "cadeado",
+        "Pado"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -587,7 +689,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "La Fonte"],
+      "tranca": [
+        "",
+        "La Fonte"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -604,7 +709,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "MGM"],
+      "tranca": [
+        "",
+        "MGM"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -621,7 +729,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Haga"],
+      "tranca": [
+        "fechadura",
+        "Haga"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -638,7 +749,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Papaiz"],
+      "tranca": [
+        "",
+        "Papaiz"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -655,7 +769,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Aliança"],
+      "tranca": [
+        "fechadura",
+        "Aliança"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -672,7 +789,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Stam"],
+      "tranca": [
+        "fechadura",
+        "Stam"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -689,7 +809,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Stam"],
+      "tranca": [
+        "",
+        "Stam"
+      ],
       "formato": "ae",
       "comprimento": "",
       "altura": "",
@@ -706,7 +829,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -723,7 +849,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Stam"],
+      "tranca": [
+        "",
+        "Stam"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -740,7 +869,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Soprano"],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
       "formato": "ci",
       "comprimento": "",
       "altura": "",
@@ -757,7 +889,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Pacri"],
+      "tranca": [
+        "fechadura",
+        "Pacri"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -774,7 +909,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Soprano"],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -791,7 +929,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -808,7 +949,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -825,7 +969,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Brasil"],
+      "tranca": [
+        "cadeado",
+        "Brasil"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -842,7 +989,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "3F"],
+      "tranca": [
+        "fechadura",
+        "3F"
+      ],
       "formato": "a",
       "comprimento": "",
       "altura": "",
@@ -859,7 +1009,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Gold"],
+      "tranca": [
+        "cadeado",
+        "Gold"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -876,7 +1029,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "MGM"],
+      "tranca": [
+        "",
+        "MGM"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -893,7 +1049,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "kwikset"],
+      "tranca": [
+        "",
+        "kwikset"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -910,7 +1069,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -927,7 +1089,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Lockwell"],
+      "tranca": [
+        "",
+        "Lockwell"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -944,7 +1109,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Soprano"],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -961,7 +1129,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Soprano"],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -978,7 +1149,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Gold"],
+      "tranca": [
+        "cadeado",
+        "Gold"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -995,7 +1169,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Arouca"],
+      "tranca": [
+        "",
+        "Arouca"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -1012,7 +1189,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "3F"],
+      "tranca": [
+        "",
+        "3F"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -1029,7 +1209,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Globe"],
+      "tranca": [
+        "",
+        "Globe"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -1046,7 +1229,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["cadeado", "Papaiz"],
+      "tranca": [
+        "cadeado",
+        "Papaiz"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -1063,7 +1249,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1080,7 +1269,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1097,7 +1289,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1114,7 +1309,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1131,7 +1329,10 @@
       "marca": "Gold",
       "tipo": "tetra",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1148,7 +1349,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", ""],
+      "tranca": [
+        "",
+        ""
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1165,7 +1369,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -1182,7 +1389,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "MGM"],
+      "tranca": [
+        "",
+        "MGM"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -1199,7 +1409,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "La Fonte"],
+      "tranca": [
+        "fechadura",
+        "La Fonte"
+      ],
       "formato": "b",
       "comprimento": "",
       "altura": "",
@@ -1216,7 +1429,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Lockwell"],
+      "tranca": [
+        "fechadura",
+        "Lockwell"
+      ],
       "formato": "outros",
       "comprimento": "",
       "altura": "",
@@ -1233,7 +1449,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "c",
       "comprimento": "",
       "altura": "",
@@ -1250,7 +1469,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["fechadura", "Brasil"],
+      "tranca": [
+        "fechadura",
+        "Brasil"
+      ],
       "formato": "be",
       "comprimento": "",
       "altura": "",
@@ -1267,7 +1489,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "ce",
       "comprimento": "",
       "altura": "",
@@ -1284,7 +1509,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "",
       "comprimento": "",
       "altura": "",
@@ -1301,7 +1529,10 @@
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
-      "tranca": ["", "Pado"],
+      "tranca": [
+        "",
+        "Pado"
+      ],
       "formato": "cei",
       "comprimento": "",
       "altura": "",
