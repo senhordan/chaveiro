@@ -45,33 +45,33 @@ const create_backup = (arg)=>{
   fs.copyFile('./estoque/estoque.json', `./estoque/backups/${arg}_${backups+1}_estoque.json`, ()=>{})
 };
 // create_backup()
-(()=>{
-  const file = read_file()
-  let quantidade_yale = 0
-  let quantidade_tetra = 0
-  file.forEach(obj=>{
-    // console.log(obj.key)
-    const total_chaves = obj.key.painel+obj.key.estoque
-    if (!obj.key.numero.includes('vago')) {
-      if (obj.key.tipo == 'yale') {
-        if (total_chaves < 5) {
-          let faltam = 5-total_chaves
-          quantidade_yale += faltam
-          console.log(`yale ${obj.key.numero} faltam ${faltam} `)
-        }
-      } else if (obj.key.tipo == 'tetra') {
-        if (total_chaves < 3) {
-          let faltam = 3-total_chaves
-          quantidade_tetra += faltam
-          console.log(`tetra  ${obj.key.numero} faltam ${faltam} `)
-        }
+// (()=>{
+//   const file = read_file()
+//   let quantidade_yale = 0
+//   let quantidade_tetra = 0
+//   file.forEach(obj=>{
+//     // console.log(obj.key)
+//     const total_chaves = obj.key.painel+obj.key.estoque
+//     if (!obj.key.numero.includes('vago')) {
+//       if (obj.key.tipo == 'yale') {
+//         if (total_chaves < 5) {
+//           let faltam = 5-total_chaves
+//           quantidade_yale += faltam
+//           console.log(`yale ${obj.key.numero} faltam ${faltam} `)
+//         }
+//       } else if (obj.key.tipo == 'tetra') {
+//         if (total_chaves < 3) {
+//           let faltam = 3-total_chaves
+//           quantidade_tetra += faltam
+//           console.log(`tetra  ${obj.key.numero} faltam ${faltam} `)
+//         }
         
-      }
-    }
-  })
-  console.log(`${quantidade_yale} chaves yale * R$1,8 = ${quantidade_yale * 1.8}`)
-  console.log(`${quantidade_tetra} chaves tetra * R$5 = ${quantidade_tetra * 5}`)
-});
+//       }
+//     }
+//   })
+//   console.log(`${quantidade_yale} chaves yale * R$1,8 = ${quantidade_yale * 1.8}`)
+//   console.log(`${quantidade_tetra} chaves tetra * R$5 = ${quantidade_tetra * 5}`)
+// });
 
 app.get('/', (req, res)=>{
   if (req.session.usuario == usuario && req.session.senha == senha) {
@@ -122,7 +122,7 @@ app.post('/login', (req, res)=>{
 
 
 app.get('/inventario', (req, res)=>{
-  // if (req.session.usuario == usuario && req.session.senha == senha) {
+  if (req.session.usuario == usuario && req.session.senha == senha) {
     io.once('connection', (socket) => {
 
       socket.on('keys', ()=>{
@@ -137,21 +137,14 @@ app.get('/inventario', (req, res)=>{
     })
 
     res.render('inventario')
-  // } else {
-  //   res.redirect('/login')
-  // }
+  } else {
+    res.redirect('/login')
+  }
 
 })
 
-// {
-//   numero_a_filtrar: '',
-//   form: 'form1',
-//   ordenar: 'saidas',
-//   tranca: 'todas'
-// }
-
 app.post('/inventario', (req, res)=>{
-  // if (req.session.usuario == usuario && req.session.senha == senha) {
+  if (req.session.usuario == usuario && req.session.senha == senha) {
     let keys = read_file()
     switch (req.body.form) {
       case 'form1':
@@ -176,9 +169,9 @@ app.post('/inventario', (req, res)=>{
         // statements_def
         break;
     }
-  // } else {
-    // res.redirect('/login')
-  // }
+  } else {
+    res.redirect('/login')
+  }
 })
 
 const porta = 4000

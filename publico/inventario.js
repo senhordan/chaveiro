@@ -4,6 +4,7 @@ const socket = io();
 
 stop_loading();
 
+numero_a_filtrar.focus()
 
 chaves.addEventListener('dblclick', event=>{
   event.path.forEach(i=>{
@@ -44,14 +45,21 @@ window.onclick = event=>{
 }
 fechar_popup2.addEventListener('click', fechar_popup)
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+resetar_filtro.addEventListener('click', ()=>{
+  altura.value = ''
+  comprimento.value = ''
+  numero_a_filtrar.value = ''
+  ordem.value = 'painel'
+  tranca.value = 'todas'
+  tranca_marca.value = 'todas'
+  document.querySelector('[name="formato"][value="todos"]').checked = true
+  filtrar.click()
+})
 
 const filtrar_numero = ()=>{
+  if (numero_a_filtrar.value.includes('-')) {
+    numero_a_filtrar.value = ''
+  }
   document.querySelectorAll('.card-container').forEach(element=>{
     card_body = element.querySelector('.card-body')
     if (card_body.id.includes(numero_a_filtrar.value)) {

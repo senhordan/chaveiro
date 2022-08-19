@@ -14,8 +14,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -34,8 +34,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -54,8 +54,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -74,8 +74,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -94,8 +94,8 @@
         "Aliança"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -114,8 +114,8 @@
         ""
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -134,8 +134,8 @@
         "Haga"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -154,8 +154,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -174,8 +174,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -194,8 +194,8 @@
         "Imab"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -214,8 +214,8 @@
         "Gold"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -234,8 +234,8 @@
         "Amelco"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -254,8 +254,8 @@
         "Haga"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -274,8 +274,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -294,8 +294,8 @@
         "HDL"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -314,8 +314,8 @@
         "Haga"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -334,8 +334,8 @@
         "Fama"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -354,8 +354,8 @@
         "HDL"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -374,8 +374,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -394,8 +394,8 @@
         "Amelco"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -414,8 +414,8 @@
         "Haga"
       ],
       "formato": "ci",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -434,8 +434,8 @@
         "Gold"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -454,8 +454,8 @@
         "3F"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -474,8 +474,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -494,8 +494,8 @@
         "Fama"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -514,8 +514,8 @@
         "Hela"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -534,8 +534,8 @@
         "Papaiz"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -554,8 +554,8 @@
         "Hela"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -574,8 +574,8 @@
         "3F"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -594,8 +594,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -614,8 +614,8 @@
         "3F"
       ],
       "formato": "ai",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -634,8 +634,8 @@
         "Soprano"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -653,9 +653,9 @@
         "fechadura",
         "Arouca"
       ],
-      "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "formato": "a",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -674,8 +674,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -694,8 +694,8 @@
         "La Fonte"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -714,8 +714,8 @@
         "MGM"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -734,8 +734,8 @@
         "Haga"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -754,8 +754,8 @@
         "Papaiz"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -774,8 +774,8 @@
         "Aliança"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -794,8 +794,8 @@
         "Stam"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -814,8 +814,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -834,8 +834,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -854,8 +854,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -874,8 +874,8 @@
         "Soprano"
       ],
       "formato": "ci",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -894,8 +894,8 @@
         "Pacri"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -914,8 +914,8 @@
         "Soprano"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -934,8 +934,8 @@
         "Pado"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -954,8 +954,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -974,8 +974,8 @@
         "Brasil"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -994,8 +994,8 @@
         "3F"
       ],
       "formato": "a",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1014,8 +1014,8 @@
         "Gold"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1034,8 +1034,8 @@
         "MGM"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1054,8 +1054,8 @@
         "kwikset"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1074,8 +1074,8 @@
         "Pado"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1094,8 +1094,8 @@
         "Lockwell"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1114,8 +1114,8 @@
         "Soprano"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1134,8 +1134,8 @@
         "Soprano"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1154,8 +1154,8 @@
         "Gold"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1174,8 +1174,8 @@
         "Arouca"
       ],
       "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1194,8 +1194,8 @@
         "3F"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1213,9 +1213,9 @@
         "",
         "Globe"
       ],
-      "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "formato": "ce",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1234,8 +1234,8 @@
         "Papaiz"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1254,8 +1254,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1274,8 +1274,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1294,8 +1294,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1314,8 +1314,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1334,8 +1334,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1354,8 +1354,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1374,8 +1374,8 @@
         "Pado"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1394,8 +1394,8 @@
         "MGM"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1414,8 +1414,8 @@
         "La Fonte"
       ],
       "formato": "b",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1433,9 +1433,9 @@
         "fechadura",
         "Lockwell"
       ],
-      "formato": "outros",
-      "comprimento": "",
-      "altura": "",
+      "formato": "aei",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1454,8 +1454,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1474,8 +1474,8 @@
         "Brasil"
       ],
       "formato": "be",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1494,8 +1494,8 @@
         "Pado"
       ],
       "formato": "ce",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1513,9 +1513,9 @@
         "",
         "Pado"
       ],
-      "formato": "",
-      "comprimento": "",
-      "altura": "",
+      "formato": "c",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -1534,8 +1534,8 @@
         "Pado"
       ],
       "formato": "cei",
-      "comprimento": "",
-      "altura": "",
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   }

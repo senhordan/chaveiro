@@ -15,11 +15,9 @@ body{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-#container{
-  /*background-color: #fff;*/
-  /*padding: 5em;*/
-  /*display: none;*/
-  /*width: auto;*/
+.card-line{
+  text-decoration: underline;
+  text-decoration-color: #00000030;
 }
 #chaves{
 	margin: 1em;
@@ -43,4 +41,16 @@ body{
 select{
 	padding: .3em;
 }
-
+.input-style{
+  color: gray;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+.tipo strong{color: ;}
+.posição strong{color: blue;}
+.quantidade strong{color: ;}
+.painel strong{color: ;}
+.saidas strong{color: ;}
+.tranca strong{color: ;}
+.altura strong{color: ;}

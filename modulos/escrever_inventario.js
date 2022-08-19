@@ -29,8 +29,8 @@ const saidas = ( a, b )=>{
 }
 
 const crescente = ( a, b )=>{
-  const a_total =  a.key.painel+a.key.estoque
-  const b_total =  b.key.painel+b.key.estoque
+  const a_total =  a.key.painel+a.key.estoque;
+  const b_total =  b.key.painel+b.key.estoque;
 
   if ( a_total < b_total ){
     return -1;
@@ -41,189 +41,163 @@ const crescente = ( a, b )=>{
   return 0;
 }
 
+const formatos = ( a, b )=>{
 
-module.exports = (obj, filtro)=>{
+  if ( a.key.formato < b.key.formato ){
+    return -1;
+  }
+  if ( a.key.formato > b.key.formato ){
+    return 1;
+  }
+  return 0;
+}
 
-  html = fs.readFileSync('./publico/inventario.html', 'utf-8')
+module.exports = (json, filtro)=>{
 
-  const $ = cheerio.load(html)
+  html = fs.readFileSync('./publico/inventario.html', 'utf-8');
+
+  const $ = cheerio.load(html);
 
   // ###################################################
-  let ordem
-  switch (filtro.ordenar) {
+  $('#ordem').val(filtro.ordem);
+
+  let ordem;
+  switch (filtro.ordem) {
     case 'crescente':
-      ordem = obj.sort(crescente)
+      ordem = json.sort(crescente);
       break;
     case 'decrescente':
-      ordem = obj.sort(decrescente)
+      ordem = json.sort(decrescente);
       break;
     case 'saidas':
-      ordem = obj.sort(saidas)
+      ordem = json.sort(saidas);
+      break;
+    case 'formatos':
+      ordem = json.sort(formatos);
       break;
     case 'painel':
-      ordem = obj
+      ordem = json;
       break;
     default:
-
       break;
-  }
+  };
 
-  let chaves = ''
-
+  let chaves = '';
   ordem.forEach(obj=>{
 
-    let key_number = obj.key.numero
-    let key_posição = `${obj.key.linha}${obj.key.coluna}`
-    let key_quantidade = obj.key.painel+obj.key.estoque
-    let key_painel = obj.key.painel
-    let key_estoque = obj.key.estoque
-    let key_marca = obj.key.marca
-    let key_saidas = obj.key.saidas
-    let key_tipo = obj.key.tipo
-    let key_tranca_tipo = obj.key.tranca[0]
-    let key_tranca_marca = obj.key.tranca[1]
+    let key_number = obj.key.numero;
+    let key_posição = `${obj.key.linha}${obj.key.coluna}`;
+    let key_quantidade = obj.key.painel+obj.key.estoque;
+    let key_painel = obj.key.painel;
+    let key_estoque = obj.key.estoque;
+    let key_marca = obj.key.marca;
+    let key_saidas = obj.key.saidas;
+    let key_tipo = obj.key.tipo;
+    let key_tranca_tipo = obj.key.tranca[0];
+    let key_tranca_marca = obj.key.tranca[1];
+    let key_formato = obj.key.formato;
+    let key_altura = obj.key.altura;
+    let key_comprimento = obj.key.comprimento;
 
-    let key_formato = ''
+    let key_icon = '';
+
     if (key_tipo == 'yale' && !key_number.includes('vago') && key_number != '27') {
-      key_formato = `<div class="text-center mb-2">
+      key_icon = `<div class="text-center mb-2">
         <img src="../publico/shape/${key_number}.svg" alt="">
       </div>`
-    }
+    };
     let element = `
     <div class="mb-2 me-2 w-auto card-container">
       <div class="card">
-        <div class="card-body" id="k-${key_number}" data-tranca_tipo="${key_tranca_tipo}" data-tranca_marca="${key_tranca_marca}" >
+        <div class="card-body" id="k-${key_number}" data-tranca_tipo="${key_tranca_tipo}" data-tranca_marca="${key_tranca_marca}" data-altura=${key_altura} data-comprimento="${key_comprimento}" data-formato="${key_formato}">
           <div class="text-center mb-2">
             <h2 class="card-title d-inline"><strong>${key_number}</strong></h2>
             <h6 class="d-inline">${key_marca}</h6>
           </div>
           <div class="card-text">
-            ${key_formato}
-            <p class="mb-0 text-decoration-underline">Tipo: <strong>${key_tipo}</strong></p>
-            <p class="mb-0 text-decoration-underline">Posição: <strong>${key_posição}</strong></p>
-            <p class="mb-0 text-decoration-underline">Quantidade: <strong>${key_quantidade}</strong></p>
-            <p class="mb-0 text-decoration-underline">Painel:<strong>${key_painel}</strong> Estoque:<strong>${key_estoque}</strong></p>
-            <p class="mb-0 text-decoration-underline">Saidas: <strong>${key_saidas}</strong></p>
-            <p class="mb-0 text-decoration-underline">${key_tranca_tipo} ${key_tranca_marca}</p>
+            ${key_icon}
+            <p class="mb-0 card-line tipo">Tipo: <strong>${key_tipo}</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>${key_posição}</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>${key_quantidade}</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>${key_painel}</strong> Estoque:<strong>${key_estoque}</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>${key_saidas}</strong></p>
+            <p class="mb-0 card-line tranca">${key_tranca_tipo} ${key_tranca_marca}</p>
+            <p class="mb-0 card-line altura">Altura: <strong>${key_altura}</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>${key_comprimento}</strong></p>
           </div>
         </div>
       </div>
     </div>
-`
-    chaves += element
-  })
+`;
+    chaves += element;
+  });
 
+$('#chaves').replaceWith(`<div id="chaves">${chaves}</div>`);
 
-  // ###################################################
-  // Set selected
-
-  if ($('#ordenar').attr('value') != filtro.ordenar) {
-    $('#ordenar').val(filtro.ordenar)
-  }
-
-  if ($('#tranca').attr('value') != filtro.tranca) {
-    $('#tranca').val(filtro.tranca)
-  }
-
-  if ($('#tranca_marca').attr('value') != filtro.tranca_marca) {
-    $('#tranca_marca').val(filtro.tranca_marca)
-  }
-  // ###################################################
-
-  $('#numero_a_filtrar').attr('value', filtro.numero_a_filtrar)
-  $('#chaves').replaceWith(`<div id="chaves">${chaves}</div>`)
-
+  $('#tranca').val(filtro.tranca);
   // ###################################################
   // Filtrar tranca
+  ['cadeado', 'fechadura']
+    .forEach(tranca=>{
+      if (tranca == filtro.tranca) {
+        $('.card-body').not(`[data-tranca_tipo="${tranca}"]`).parent().parent().remove();
+      };
+    });
 
-  switch (filtro.tranca) {
-    case 'cadeado':
-      $('.card-body').not('[data-tranca_tipo="cadeado"]').parent().parent().remove()
-      // $('[data-tranca_tipo="fechadura"]').parent().parent().remove()
-      break;
-    case 'fechadura':
-      $('.card-body').not('[data-tranca_tipo="fechadura"]').parent().parent().remove()
-      // $('[data-tranca_tipo="cadeado"]').parent().parent().remove()
-      break;
-    default:
-      break;
-  }
-
+  $('#tranca_marca').val(filtro.tranca_marca);
   // ###################################################
   // Filtrar marca da tranca
+  ['Stam', 'Aliança', 'Haga', 'Imab', 'Gold', 'Amelco', 'HDL', 'Fama', '3F', 'Hela', 'Papaiz', 'Pado', 'Soprano', 'Arouca', 'La Fonte', 'MGM', 'Pacri', 'Brasil', 'kwikset', 'Lockwell', 'Globe']
+    .forEach(marca=>{
+    if (marca.toLowerCase() == filtro.tranca_marca) {
+      $('.card-body').not(`[data-tranca_marca="${marca}"]`).parent().parent().remove();
+    };
+  });
 
-  switch (filtro.tranca_marca) {
-    case 'stam':
-      $('.card-body').not('[data-tranca_marca="Stam"]').parent().parent().remove()
-      break;
-    case 'aliança':
-      $('.card-body').not('[data-tranca_marca="Aliança"]').parent().parent().remove()
-      break;
-    case 'haga':
-      $('.card-body').not('[data-tranca_marca="Haga"]').parent().parent().remove()
-      break;
-    case 'imab':
-      $('.card-body').not('[data-tranca_marca="Imab"]').parent().parent().remove()
-      break;
-    case 'gold':
-      $('.card-body').not('[data-tranca_marca="Gold"]').parent().parent().remove()
-      break;
-    case 'amelco':
-      $('.card-body').not('[data-tranca_marca="Amelco"]').parent().parent().remove()
-      break;
-    case 'hdl':
-      $('.card-body').not('[data-tranca_marca="HDL"]').parent().parent().remove()
-      break;
-    case 'fama':
-      $('.card-body').not('[data-tranca_marca="Fama"]').parent().parent().remove()
-      break;
-    case '3f':
-      $('.card-body').not('[data-tranca_marca="3F"]').parent().parent().remove()
-      break;
-    case 'hela':
-      $('.card-body').not('[data-tranca_marca="Hela"]').parent().parent().remove()
-      break;
-    case 'papaiz':
-      $('.card-body').not('[data-tranca_marca="Papaiz"]').parent().parent().remove()
-      break;
-    case 'pado':
-      $('.card-body').not('[data-tranca_marca="Pado"]').parent().parent().remove()
-      break;
-    case 'soprano':
-      $('.card-body').not('[data-tranca_marca="Soprano"]').parent().parent().remove()
-      break;
-    case 'arouca':
-      $('.card-body').not('[data-tranca_marca="Arouca"]').parent().parent().remove()
-      break;
-    case 'la fonte':
-      $('.card-body').not('[data-tranca_marca="La Fonte"]').parent().parent().remove()
-      break;
-    case 'mgm':
-      $('.card-body').not('[data-tranca_marca="MGM"]').parent().parent().remove()
-      break;
-    case 'pacri':
-      $('.card-body').not('[data-tranca_marca="Pacri"]').parent().parent().remove()
-      break;
-    case 'brasil':
-      $('.card-body').not('[data-tranca_marca="Brasil"]').parent().parent().remove()
-      break;
-    case 'kwikset':
-      $('.card-body').not('[data-tranca_marca="kwikset"]').parent().parent().remove()
-      break;
-    case 'lockwell':
-      $('.card-body').not('[data-tranca_marca="Lockwell"]').parent().parent().remove()
-      break;
-    case 'globe':
-      $('.card-body').not('[data-tranca_marca="Globe"]').parent().parent().remove()
-      break;
-    default:
-      break;
+  $('[name="formato"][checked=""]').removeAttr('checked');
+  $(`[name="formato"][value="${filtro.formato}"]`).attr('checked', '');
+  // ###################################################
+  // Filtrar formato
+  ['a', 'b', 'c', 'outros']
+    .forEach(formato=>{
+    if (formato == filtro.formato) {
+      $('.card-body').not(`[data-formato^="${formato}"]`).parent().parent().remove();
+    };
+  });
+// filtro.altura = filtro.altura.replace(',', '.')
+
+  $('#altura').val(filtro.altura)
+  if (filtro.altura != '') {
+    console.log(filtro.altura)
+    $('.card-body').not((i, element)=>{
+      const altura = Number($(element).data('altura'))
+      filtro.altura = Number(filtro.altura)
+      if (altura >= filtro.altura && altura <= filtro.altura + 0.3) {
+        return $(element).data('altura')
+      }
+    }).parent().parent().remove()
   }
-  fs.writeFileSync('./publico/inventario.html', $.html())
+
+  $('#comprimento').val(filtro.comprimento)
+  if (filtro.comprimento != '') {
+    console.log(filtro.comprimento)
+    $('.card-body').not((i, element)=>{
+      const comprimento = Number($(element).data('comprimento'))
+      filtro.comprimento = Number(filtro.comprimento)
+      if (comprimento >= filtro.comprimento) {
+        return $(element).data('comprimento')
+      }
+    }).parent().parent().remove()
+  }
+
+  $('#numero_a_filtrar').attr('value', filtro.numero_a_filtrar);
+
+
+  fs.writeFileSync('./publico/inventario.html', $.html());
 
   exec(`python3 ./modulos/formatar_html.py`, (error, stdout, stderr) => {
-      console.log(stdout);
-      fs.writeFileSync('./publico/inventario.html', stdout)
+      // console.log(stdout);
+      fs.writeFileSync('./publico/inventario.html', stdout);
     });
 
 }
