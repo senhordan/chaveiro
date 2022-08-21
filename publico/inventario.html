@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inventario</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="../publico/inventario.css">
+  <link rel="stylesheet" href="../publico/inventario/inventario.css">
 </head>
 <body class="position-relative">
   <div id="loading">
@@ -39,6 +39,14 @@
                   <span class="input-group-text">Quantidade no Estoque</span>
                   <input type="number" class="form-control" id="input_quantidade_estoque" name="quantidade_estoque" placeholder="">
                 </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Altura</span>
+                  <input type="number" class="form-control" id="input_altura" name="altura" placeholder="">
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Comprimento</span>
+                  <input type="number" class="form-control" id="input_comprimento" name="comprimento" placeholder="">
+                </div>
               <h6 class="alert alert-warning">Aviso!! Essas alterações não serão registradas nos serviços.</h6>
               <div class="text-end">
                 <input type="button" value="Cancelar" id="fechar_popup2" class="btn btn-secondary">
@@ -60,11 +68,11 @@
         <p class="mb-2">
           <label class="form-label w-auto me-2 ">Ordenar por: </label>
           <select id="ordem" name="ordem" class="w-auto input-style">
-            <option value="formatos">Formato da chave</option>
+            <option value="formatos" selected="">Formato da chave</option>
             <option value="saidas">Mais saidas</option>
             <option value="crescente">Menos chaves</option>
             <option value="decrescente">Mais chaves</option>
-            <option value="painel" selected="">Ordem do painel</option>
+            <option value="painel">Ordem do painel</option>
           </select>
         </p>
         <p class="mb-2">
@@ -115,10 +123,10 @@
             <label class="form-label w-auto me-2">Formato da Chave: </label>
           </div>
           <!-- todos -->
-          <input class="form-check-input" type="radio" name="formato" value="todos" checked="">
+          <input class="form-check-input" type="radio" name="formato" value="todos">
           <label>Todos</label>
           <!-- a -->
-          <input class="form-check-input" type="radio" name="formato" value="a">
+          <input class="form-check-input" type="radio" name="formato" value="a" checked="">
           <img src="../publico/shape/846.svg" alt="a">
           <img src="../publico/shape/543.svg" alt="ae">
           <img src="../publico/shape/804.svg" alt="ai">
@@ -158,8 +166,8 @@
       </div>
             <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
             <p class="mb-0 card-line posição">Posição: <strong>a1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
             <p class="mb-0 card-line tranca">fechadura Stam</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
@@ -185,6 +193,121 @@
             <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
             <p class="mb-0 card-line tranca">fechadura Stam</p>
+            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-2 me-2 w-auto card-container">
+      <div class="card">
+        <div class="card-body" id="k-544" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="null" data-comprimento="null" data-formato="a">
+          <div class="text-center mb-2">
+            <h2 class="card-title d-inline"><strong>544</strong></h2>
+            <h6 class="d-inline">Gold</h6>
+          </div>
+          <div class="card-text">
+            <div class="text-center mb-2">
+        <img src="../publico/shape/544.svg" alt="">
+      </div>
+            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>b1</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+            <p class="mb-0 card-line tranca">fechadura Stam</p>
+            <p class="mb-0 card-line altura">Altura: <strong>null</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>null</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-2 me-2 w-auto card-container">
+      <div class="card">
+        <div class="card-body" id="k-826" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="text-center mb-2">
+            <h2 class="card-title d-inline"><strong>826</strong></h2>
+            <h6 class="d-inline">Gold</h6>
+          </div>
+          <div class="card-text">
+            <div class="text-center mb-2">
+        <img src="../publico/shape/826.svg" alt="">
+      </div>
+            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>d2</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+            <p class="mb-0 card-line tranca">fechadura 3F</p>
+            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-2 me-2 w-auto card-container">
+      <div class="card">
+        <div class="card-body" id="k-832" data-tranca_tipo="fechadura" data-tranca_marca="Arouca" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="text-center mb-2">
+            <h2 class="card-title d-inline"><strong>832</strong></h2>
+            <h6 class="d-inline">Gold</h6>
+          </div>
+          <div class="card-text">
+            <div class="text-center mb-2">
+        <img src="../publico/shape/832.svg" alt="">
+      </div>
+            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>e5</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>4</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+            <p class="mb-0 card-line tranca">fechadura Arouca</p>
+            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-2 me-2 w-auto card-container">
+      <div class="card">
+        <div class="card-body" id="k-605" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="text-center mb-2">
+            <h2 class="card-title d-inline"><strong>605</strong></h2>
+            <h6 class="d-inline">Gold</h6>
+          </div>
+          <div class="card-text">
+            <div class="text-center mb-2">
+        <img src="../publico/shape/605.svg" alt="">
+      </div>
+            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>g1</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+            <p class="mb-0 card-line tranca"> Stam</p>
+            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
+            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-2 me-2 w-auto card-container">
+      <div class="card">
+        <div class="card-body" id="k-1040" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="text-center mb-2">
+            <h2 class="card-title d-inline"><strong>1040</strong></h2>
+            <h6 class="d-inline">Gold</h6>
+          </div>
+          <div class="card-text">
+            <div class="text-center mb-2">
+        <img src="../publico/shape/1040.svg" alt="">
+      </div>
+            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>h1</strong></p>
+            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
+            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+            <p class="mb-0 card-line tranca">fechadura 3F</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
             <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
           </div>
@@ -239,98 +362,6 @@
     </div>
     <div class="mb-2 me-2 w-auto card-container">
       <div class="card">
-        <div class="card-body" id="k-72" data-tranca_tipo="" data-tranca_marca="Aliança" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>72</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/72.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>a5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Aliança</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-2" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>2</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/2.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>a6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-380" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>380</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/380.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>a7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Haga</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-544" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>544</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/544.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
         <div class="card-body" id="k-543" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
           <div class="text-center mb-2">
             <h2 class="card-title d-inline"><strong>543</strong></h2>
@@ -346,142 +377,6 @@
             <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
             <p class="mb-0 card-line tranca">fechadura Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-721" data-tranca_tipo="" data-tranca_marca="Imab" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>721</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/721.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>17</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>9</strong> Estoque:<strong>8</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Imab</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1120" data-tranca_tipo="fechadura" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1120</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1120.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Gold</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1024" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1024</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1024.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Amelco</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-267" data-tranca_tipo="" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>267</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/267.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Haga</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-vago-1" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>vago-1</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>b7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>0</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-714" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>714</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/714.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>11</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>11</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> HDL</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
             <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
           </div>
@@ -513,165 +408,6 @@
     </div>
     <div class="mb-2 me-2 w-auto card-container">
       <div class="card">
-        <div class="card-body" id="k-30" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>30</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/30.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Fama</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1063" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1063</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1063.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> HDL</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-vago-2" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>vago-2</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>0</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-848" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>848</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/848.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Amelco</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-381" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="ci">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>381</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/381.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>c7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Haga</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1072" data-tranca_tipo="cadeado" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1072</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1072.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>d1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Gold</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-826" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="a">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>826</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/826.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>d2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura 3F</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
         <div class="card-body" id="k-799" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
           <div class="text-center mb-2">
             <h2 class="card-title d-inline"><strong>799</strong></h2>
@@ -687,29 +423,6 @@
             <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
             <p class="mb-0 card-line tranca">fechadura Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-303" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>303</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/303.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>d4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Fama</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
             <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
           </div>
@@ -741,328 +454,6 @@
     </div>
     <div class="mb-2 me-2 w-auto card-container">
       <div class="card">
-        <div class="card-body" id="k-150" data-tranca_tipo="fechadura" data-tranca_marca="Papaiz" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>150</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/150.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>d6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Papaiz</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1118" data-tranca_tipo="fechadura" data-tranca_marca="Hela" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1118</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1118.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>d7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Hela</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1126" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1126</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1126.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura 3F</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-179" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>179</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/179.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-804" data-tranca_tipo="" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="ai">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>804</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/804.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> 3F</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1097" data-tranca_tipo="" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1097</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1097.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>7</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Soprano</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-832" data-tranca_tipo="fechadura" data-tranca_marca="Arouca" data-altura="0" data-comprimento="0" data-formato="a">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>832</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/832.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>4</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Arouca</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-300" data-tranca_tipo="cadeado" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>300</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/300.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>6</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>6</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-16" data-tranca_tipo="" data-tranca_marca="La Fonte" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>16</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/16.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>e7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>10</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> La Fonte</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1080" data-tranca_tipo="" data-tranca_marca="MGM" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1080</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1080.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> MGM</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1129" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1129</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1129.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Haga</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-519" data-tranca_tipo="" data-tranca_marca="Papaiz" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>519</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/519.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Papaiz</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-477" data-tranca_tipo="fechadura" data-tranca_marca="Aliança" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>477</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/477.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Aliança</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1030" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1030</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1030.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>7</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
         <div class="card-body" id="k-999" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
           <div class="text-center mb-2">
             <h2 class="card-title d-inline"><strong>999</strong></h2>
@@ -1078,682 +469,6 @@
             <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
             <p class="mb-0 card-line tranca"> Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-27" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>27</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>f7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>17</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>7</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-605" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>605</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/605.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Stam</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1151" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="ci">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1151</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1151.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Soprano</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-109" data-tranca_tipo="fechadura" data-tranca_marca="Pacri" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>109</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/109.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Pacri</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1194" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1194</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1194.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Soprano</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-688" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>688</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/688.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>11</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>3</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-682" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>682</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/682.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>7</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-698" data-tranca_tipo="cadeado" data-tranca_marca="Brasil" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>698</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/698.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>g7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Brasil</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1040" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="a">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1040</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1040.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura 3F</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-596" data-tranca_tipo="cadeado" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>596</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/596.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Gold</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1007" data-tranca_tipo="" data-tranca_marca="MGM" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1007</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1007.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> MGM</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1042" data-tranca_tipo="" data-tranca_marca="kwikset" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1042</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1042.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> kwikset</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-175" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>175</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/175.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-398" data-tranca_tipo="" data-tranca_marca="Lockwell" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>398</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/398.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Lockwell</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-397" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>397</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/397.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>h7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Soprano</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-792" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>792</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/792.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Soprano</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-595" data-tranca_tipo="cadeado" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>595</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/595.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Gold</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-817" data-tranca_tipo="" data-tranca_marca="Arouca" data-altura="0" data-comprimento="0" data-formato="outros">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>817</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/817.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Arouca</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-829" data-tranca_tipo="" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>829</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/829.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> 3F</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-733" data-tranca_tipo="" data-tranca_marca="Globe" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>733</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/733.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Globe</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-716" data-tranca_tipo="cadeado" data-tranca_marca="Papaiz" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>716</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/716.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">cadeado Papaiz</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-905" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>905</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>tetra</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>i7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-667" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>667</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>tetra</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>0</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-665" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>665</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>tetra</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j2</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-933" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>933</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>tetra</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j3</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-183" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>183</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>tetra</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-vago-3" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>vago-3</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j5</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>0</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> </p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-707" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>707</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/707.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j6</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-1085" data-tranca_tipo="" data-tranca_marca="MGM" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>1085</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/1085.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>j7</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> MGM</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-858" data-tranca_tipo="fechadura" data-tranca_marca="La Fonte" data-altura="0" data-comprimento="0" data-formato="b">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>858</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/858.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>k1</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura La Fonte</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
             <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
           </div>
@@ -1785,113 +500,21 @@
     </div>
     <div class="mb-2 me-2 w-auto card-container">
       <div class="card">
-        <div class="card-body" id="k-693" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
+        <div class="card-body" id="k-804" data-tranca_tipo="" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="ai">
           <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>693</strong></h2>
+            <h2 class="card-title d-inline"><strong>804</strong></h2>
             <h6 class="d-inline">Gold</h6>
           </div>
           <div class="card-text">
             <div class="text-center mb-2">
-        <img src="../publico/shape/693.svg" alt="">
+        <img src="../publico/shape/804.svg" alt="">
       </div>
             <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>k3</strong></p>
+            <p class="mb-0 card-line posição">Posição: <strong>e3</strong></p>
             <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
             <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
             <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-512" data-tranca_tipo="fechadura" data-tranca_marca="Brasil" data-altura="0" data-comprimento="0" data-formato="be">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>512</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/512.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>k4</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>23</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>11</strong> Estoque:<strong>12</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca">fechadura Brasil</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-691" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="ce">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>691</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/691.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>0000</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-693" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>693</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/693.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>0000</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
-            <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-            <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mb-2 me-2 w-auto card-container">
-      <div class="card">
-        <div class="card-body" id="k-694" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="cei">
-          <div class="text-center mb-2">
-            <h2 class="card-title d-inline"><strong>694</strong></h2>
-            <h6 class="d-inline">Gold</h6>
-          </div>
-          <div class="card-text">
-            <div class="text-center mb-2">
-        <img src="../publico/shape/694.svg" alt="">
-      </div>
-            <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
-            <p class="mb-0 card-line posição">Posição: <strong>0000</strong></p>
-            <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-            <p class="mb-0 card-line painel">Painel:<strong>0</strong> Estoque:<strong>2</strong></p>
-            <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
-            <p class="mb-0 card-line tranca"> Pado</p>
+            <p class="mb-0 card-line tranca"> 3F</p>
             <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
             <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
           </div>
@@ -1902,5 +525,5 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="/socket.io/socket.io.js"></script>
-  <script src="../publico/inventario.js"></script>
+  <script src="../publico/inventario/inventario.js"></script>
 </body></html>

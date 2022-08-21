@@ -19,10 +19,12 @@ chaves.addEventListener('dblclick', event=>{
       socket.once('keys return', (obj)=>{
         obj.forEach(key=>{
           if (key.key.numero == card_number) {
-            console.log(key.key.numero)
             input_numero.value = key.key.numero
             input_quantidade_painel.value = key.key.painel
             input_quantidade_estoque.value = key.key.estoque
+            console.log(key.key.altura)
+            input_altura.value = key.key.altura
+            input_comprimento.value = key.key.comprimento
           }
         })
       })

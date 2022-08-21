@@ -159,6 +159,8 @@ app.post('/inventario', (req, res)=>{
             key.key.numero = req.body.numero
             key.key.painel = Number(req.body.quantidade_painel)
             key.key.estoque = Number(req.body.quantidade_estoque)
+            key.key.altura = Number(req.body.altura)
+            key.key.comprimento = Number(req.body.comprimento)
             console.log(key.key)
             fs.writeFileSync('./estoque/estoque.json', JSON.stringify(keys))  
           }
