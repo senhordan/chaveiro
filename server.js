@@ -122,7 +122,7 @@ app.post('/login', (req, res)=>{
 
 
 app.get('/inventario', (req, res)=>{
-  if (req.session.usuario == usuario && req.session.senha == senha) {
+  // if (req.session.usuario == usuario && req.session.senha == senha) {
     io.once('connection', (socket) => {
 
       socket.on('keys', ()=>{
@@ -137,14 +137,14 @@ app.get('/inventario', (req, res)=>{
     })
 
     res.render('inventario')
-  } else {
-    res.redirect('/login')
-  }
+  // } else {
+  //   res.redirect('/login')
+  // }
 
 })
 
 app.post('/inventario', (req, res)=>{
-  if (req.session.usuario == usuario && req.session.senha == senha) {
+  // if (req.session.usuario == usuario && req.session.senha == senha) {
     let keys = read_file()
     switch (req.body.form) {
       case 'form1':
@@ -171,9 +171,9 @@ app.post('/inventario', (req, res)=>{
         // statements_def
         break;
     }
-  } else {
-    res.redirect('/login')
-  }
+  // } else {
+  //   res.redirect('/login')
+  // }
 })
 
 const porta = 4000

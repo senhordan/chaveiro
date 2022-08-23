@@ -154,8 +154,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": null,
-      "altura": null,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
