@@ -14,8 +14,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": 1.75,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -34,8 +34,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": 1.7,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -54,8 +54,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": 1.7,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -74,8 +74,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": 2.05,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -94,8 +94,8 @@
         "Aliança"
       ],
       "formato": "b",
-      "comprimento": 2.25,
-      "altura": 0.75,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -114,8 +114,8 @@
         ""
       ],
       "formato": "b",
-      "comprimento": 2.75,
-      "altura": 2.8,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -124,7 +124,7 @@
       "numero": "380",
       "linha": "a",
       "coluna": 7,
-      "painel": 5,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -134,8 +134,8 @@
         "Haga"
       ],
       "formato": "c",
-      "comprimento": 2.15,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -154,8 +154,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": 2.1,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -174,8 +174,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": 2.1,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -194,8 +194,8 @@
         "Imab"
       ],
       "formato": "b",
-      "comprimento": 2.3,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -204,7 +204,7 @@
       "numero": "1120",
       "linha": "b",
       "coluna": 4,
-      "painel": 5,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -214,8 +214,8 @@
         "Gold"
       ],
       "formato": "outros",
-      "comprimento": 1.55,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -224,7 +224,7 @@
       "numero": "1024",
       "linha": "b",
       "coluna": 5,
-      "painel": 5,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -234,8 +234,8 @@
         "Amelco"
       ],
       "formato": "be",
-      "comprimento": 2.2,
-      "altura": 0.8,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -254,8 +254,8 @@
         "Haga"
       ],
       "formato": "be",
-      "comprimento": 2.25,
-      "altura": 0.75,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -294,8 +294,8 @@
         "HDL"
       ],
       "formato": "be",
-      "comprimento": 2.75,
-      "altura": 0.85,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -304,7 +304,7 @@
       "numero": "800",
       "linha": "c",
       "coluna": 2,
-      "painel": 5,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -314,8 +314,8 @@
         "Haga"
       ],
       "formato": "ae",
-      "comprimento": 2.15,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -324,7 +324,7 @@
       "numero": "30",
       "linha": "c",
       "coluna": 3,
-      "painel": 5,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -334,8 +334,8 @@
         "Fama"
       ],
       "formato": "c",
-      "comprimento": 2.7,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -344,7 +344,7 @@
       "numero": "1063",
       "linha": "c",
       "coluna": 4,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -354,8 +354,8 @@
         "HDL"
       ],
       "formato": "c",
-      "comprimento": 2.85,
-      "altura": 0.80,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -384,7 +384,7 @@
       "numero": "848",
       "linha": "c",
       "coluna": 6,
-      "painel": 3,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -394,8 +394,8 @@
         "Amelco"
       ],
       "formato": "b",
-      "comprimento": 2.2,
-      "altura": 0.85,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -404,7 +404,7 @@
       "numero": "381",
       "linha": "c",
       "coluna": 7,
-      "painel": 5,
+      "painel": 1,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -414,8 +414,8 @@
         "Haga"
       ],
       "formato": "ci",
-      "comprimento": 2.2,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -424,7 +424,7 @@
       "numero": "1072",
       "linha": "d",
       "coluna": 1,
-      "painel": 5,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -434,8 +434,8 @@
         "Gold"
       ],
       "formato": "b",
-      "comprimento": 2.4,
-      "altura": 0.8,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -454,8 +454,8 @@
         "3F"
       ],
       "formato": "a",
-      "comprimento": 2.1,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -464,7 +464,7 @@
       "numero": "799",
       "linha": "d",
       "coluna": 3,
-      "painel": 5,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -474,8 +474,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": 2.1,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -484,7 +484,7 @@
       "numero": "303",
       "linha": "d",
       "coluna": 4,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -494,8 +494,8 @@
         "Fama"
       ],
       "formato": "c",
-      "comprimento": 2.3,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -514,8 +514,8 @@
         "Hela"
       ],
       "formato": "ae",
-      "comprimento": 2.15,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -524,7 +524,7 @@
       "numero": "150",
       "linha": "d",
       "coluna": 6,
-      "painel": 6,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -534,8 +534,8 @@
         "Papaiz"
       ],
       "formato": "c",
-      "comprimento": 2.3,
-      "altura": 0.75,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -544,7 +544,7 @@
       "numero": "1118",
       "linha": "d",
       "coluna": 7,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -554,8 +554,8 @@
         "Hela"
       ],
       "formato": "c",
-      "comprimento": 2.2,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -574,9 +574,9 @@
         "3F"
       ],
       "formato": "c",
-      "comprimento": 2.05,
-      "altura": 0.6,
-      "saidas": 1
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
     }
   },
   {
@@ -584,7 +584,7 @@
       "numero": "179",
       "linha": "e",
       "coluna": 2,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -594,8 +594,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": 2.45,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -614,8 +614,8 @@
         "3F"
       ],
       "formato": "ai",
-      "comprimento": 2.25,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -634,8 +634,8 @@
         "Soprano"
       ],
       "formato": "outros",
-      "comprimento": 1.6,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -645,7 +645,7 @@
       "linha": "e",
       "coluna": 5,
       "painel": 4,
-      "estoque": 3,
+      "estoque": 4,
       "marca": "Gold",
       "tipo": "yale",
       "similares": [],
@@ -654,8 +654,8 @@
         "Arouca"
       ],
       "formato": "a",
-      "comprimento": 2.05,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -674,8 +674,8 @@
         "Pado"
       ],
       "formato": "c",
-      "comprimento": 2.95,
-      "altura": 0.8,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -694,8 +694,8 @@
         "La Fonte"
       ],
       "formato": "b",
-      "comprimento": 2.6,
-      "altura": 0.75,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -704,7 +704,7 @@
       "numero": "1080",
       "linha": "f",
       "coluna": 1,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -714,8 +714,8 @@
         "MGM"
       ],
       "formato": "c",
-      "comprimento": 2.4,
-      "altura": 0.75,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -724,7 +724,7 @@
       "numero": "1129",
       "linha": "f",
       "coluna": 2,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -734,8 +734,8 @@
         "Haga"
       ],
       "formato": "be",
-      "comprimento": 2.15,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -754,8 +754,8 @@
         "Papaiz"
       ],
       "formato": "c",
-      "comprimento": 2.2,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -764,7 +764,7 @@
       "numero": "477",
       "linha": "f",
       "coluna": 4,
-      "painel": 5,
+      "painel": 3,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -774,8 +774,8 @@
         "Aliança"
       ],
       "formato": "b",
-      "comprimento": 2.3,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -794,8 +794,8 @@
         "Stam"
       ],
       "formato": "ce",
-      "comprimento": 2.2,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -814,8 +814,8 @@
         "Stam"
       ],
       "formato": "ae",
-      "comprimento": 2.2,
-      "altura": 0.25,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -834,8 +834,8 @@
         ""
       ],
       "formato": "",
-      "comprimento": 2.25,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -844,7 +844,7 @@
       "numero": "605",
       "linha": "g",
       "coluna": 1,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -854,8 +854,8 @@
         "Stam"
       ],
       "formato": "a",
-      "comprimento": 2.25,
-      "altura": 0.6,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -864,7 +864,7 @@
       "numero": "1151",
       "linha": "g",
       "coluna": 2,
-      "painel": 5,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -874,8 +874,8 @@
         "Soprano"
       ],
       "formato": "ci",
-      "comprimento": 2.2,
-      "altura": 0.7,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },
@@ -884,7 +884,7 @@
       "numero": "109",
       "linha": "g",
       "coluna": 3,
-      "painel": 5,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -894,8 +894,8 @@
         "Pacri"
       ],
       "formato": "ce",
-      "comprimento": 2.45,
-      "altura": 0.65,
+      "comprimento": 0,
+      "altura": 0,
       "saidas": 0
     }
   },

@@ -139,7 +139,7 @@ const formatos = ( a, b )=>{
 
 // -------------------------------------------------------------
 
-const filtrar = ()=>{
+filtrar.onclick = ()=>{
   socket.emit('keys')
   socket.once('keys return', (json)=>{
 
