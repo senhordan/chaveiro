@@ -244,14 +244,54 @@ filtrar.onclick = ()=>{
     });
 
   if (altura.value != '') {
-    console.log(altura.value)
+    const altura_da_chave = Number(altura.value)
+    const menor_altura = (altura_da_chave - 0.05).toFixed(2)
+    const maior_altura = (altura_da_chave + 0.05).toFixed(2)
+    if ($('#altura_exato').checked) {
+      console.log(0)
+      $('.card-body').forEach(card_body=>{
+        card_altura = Number(card_body.dataset.altura);
+        if (card_altura < menor_altura || card_altura > maior_altura) {
+          card_body.closest('.card-container').remove();
+        };
+      });
+    } else {
+      console.log(1)
+      $('.card-body').forEach(card_body=>{
+        card_altura = Number(card_body.dataset.altura);
+        if (card_altura < menor_altura) {
+          card_body.closest('.card-container').remove();
+        };
+      });
+    };
 
-  }
+  };
+
 
   if (comprimento.value != '') {
-    console.log(comprimento.value)
+    const comprimento_da_chave = Number(comprimento.value)
+    const menor_comprimento = (comprimento_da_chave - 0.05).toFixed(2)
+    const maior_comprimento = (comprimento_da_chave + 0.05).toFixed(2)
+    if ($('#comprimento_exato').checked) {
+      console.log(0)
+      $('.card-body').forEach(card_body=>{
+        card_comprimento = Number(card_body.dataset.comprimento);
+        if (card_comprimento < menor_comprimento || card_comprimento > maior_comprimento) {
+          card_body.closest('.card-container').remove();
+        };
+      });
+    } else {
+      console.log(1)
+      $('.card-body').forEach(card_body=>{
+        card_comprimento = Number(card_body.dataset.comprimento);
+        if (card_comprimento < menor_comprimento) {
+          card_body.closest('.card-container').remove();
+        };
+      });
+    };
 
-  }
+  };
+
 
 
   // $('#altura').val(filtro.altura)

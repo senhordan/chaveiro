@@ -68,11 +68,11 @@
         <p class="mb-2">
           <label class="form-label w-auto me-2 ">Ordenar por: </label>
           <select id="ordem" name="ordem" class="w-auto input-style">
-            <option value="formatos" selected="">Formato da chave</option>
+            <option value="formatos">Formato da chave</option>
             <option value="saidas">Mais saidas</option>
             <option value="crescente">Menos chaves</option>
             <option value="decrescente">Mais chaves</option>
-            <option value="painel">Ordem do painel</option>
+            <option value="painel" selected="">Ordem do painel</option>
           </select>
         </p>
         <p class="mb-2">
@@ -113,10 +113,12 @@
         <p class="mb-2">
           <label class="form-label me-2">Altura da chave: </label>
           <input type="number" step="0.01" class="form-control w-25 d-inline" id="altura" name="altura" value="">
+          <input type="checkbox" id="altura_exato" class="d-inline">
         </p>
         <p class="mb-2">
           <label class="form-label me-2">Comprimento da chave: </label>
           <input type="number" step="0.01" class="form-control w-25 d-inline" id="comprimento" name="comprimento" value="">
+          <input type="checkbox" id="comprimento_exato" class="d-inline">
         </p>
         <p class="mb-2">
           </p><div class="">
@@ -151,11 +153,11 @@
       </div>
     </form>
   </div>
-  <main class="d-flex justify-content-center">
+<main class="d-flex justify-content-center">
     <div id="chaves">
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-846" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-846" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="1.75" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>846</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -170,8 +172,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>1.75</strong></p>
             </div>
           </div>
         </div>
@@ -179,7 +181,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1112" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-1112" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="1.7" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1112</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -194,8 +196,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>1.7</strong></p>
             </div>
           </div>
         </div>
@@ -203,7 +205,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1110" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-1110" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="1.7" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1110</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -218,8 +220,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>1.7</strong></p>
             </div>
           </div>
         </div>
@@ -227,7 +229,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-611" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-611" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.7" data-comprimento="2.05" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>611</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -242,8 +244,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.05</strong></p>
             </div>
           </div>
         </div>
@@ -251,7 +253,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-72" data-tranca_tipo="" data-tranca_marca="Aliança" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-72" data-tranca_tipo="" data-tranca_marca="Aliança" data-altura="0.75" data-comprimento="2.25" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>72</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -266,8 +268,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Aliança</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.75</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.25</strong></p>
             </div>
           </div>
         </div>
@@ -275,7 +277,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-2" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-2" data-tranca_tipo="" data-tranca_marca="" data-altura="2.8" data-comprimento="2.75" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>2</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -290,8 +292,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> </p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>2.8</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.75</strong></p>
             </div>
           </div>
         </div>
@@ -299,7 +301,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-380" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-380" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0.65" data-comprimento="2.15" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>380</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -310,12 +312,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>a7</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Haga</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.15</strong></p>
             </div>
           </div>
         </div>
@@ -323,7 +325,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-544" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-544" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="2.1" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>544</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -338,8 +340,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.1</strong></p>
             </div>
           </div>
         </div>
@@ -347,7 +349,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-543" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-543" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="2.1" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>543</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -362,8 +364,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.1</strong></p>
             </div>
           </div>
         </div>
@@ -371,7 +373,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-721" data-tranca_tipo="" data-tranca_marca="Imab" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-721" data-tranca_tipo="" data-tranca_marca="Imab" data-altura="0.7" data-comprimento="2.3" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>721</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -386,8 +388,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>9</strong> Estoque:<strong>8</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Imab</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.3</strong></p>
             </div>
           </div>
         </div>
@@ -395,7 +397,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1120" data-tranca_tipo="fechadura" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="outros">
+          <div class="card-body" id="k-1120" data-tranca_tipo="fechadura" data-tranca_marca="Gold" data-altura="0.65" data-comprimento="1.55" data-formato="outros">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1120</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -406,12 +408,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>b4</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Gold</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>1.55</strong></p>
             </div>
           </div>
         </div>
@@ -419,7 +421,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1024" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0" data-comprimento="0" data-formato="be">
+          <div class="card-body" id="k-1024" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0.8" data-comprimento="2.2" data-formato="be">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1024</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -430,12 +432,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>b5</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Amelco</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.8</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -443,7 +445,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-267" data-tranca_tipo="" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="be">
+          <div class="card-body" id="k-267" data-tranca_tipo="" data-tranca_marca="Haga" data-altura="0.75" data-comprimento="2.25" data-formato="be">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>267</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -458,8 +460,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Haga</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.75</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.25</strong></p>
             </div>
           </div>
         </div>
@@ -489,7 +491,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-714" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0" data-comprimento="0" data-formato="be">
+          <div class="card-body" id="k-714" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0.85" data-comprimento="2.75" data-formato="be">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>714</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -504,8 +506,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>11</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> HDL</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.85</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.75</strong></p>
             </div>
           </div>
         </div>
@@ -513,7 +515,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-800" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-800" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0.65" data-comprimento="2.15" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>800</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -524,12 +526,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>c2</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Haga</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.15</strong></p>
             </div>
           </div>
         </div>
@@ -537,7 +539,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-30" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-30" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0.65" data-comprimento="2.7" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>30</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -548,12 +550,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>c3</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Fama</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.7</strong></p>
             </div>
           </div>
         </div>
@@ -561,7 +563,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1063" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-1063" data-tranca_tipo="" data-tranca_marca="HDL" data-altura="0.8" data-comprimento="2.85" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1063</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -572,12 +574,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>c4</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> HDL</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.8</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.85</strong></p>
             </div>
           </div>
         </div>
@@ -607,7 +609,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-848" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-848" data-tranca_tipo="" data-tranca_marca="Amelco" data-altura="0.85" data-comprimento="2.2" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>848</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -618,12 +620,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>c6</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Amelco</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.85</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -631,7 +633,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-381" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="ci">
+          <div class="card-body" id="k-381" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0.65" data-comprimento="2.2" data-formato="ci">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>381</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -642,12 +644,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>c7</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>1</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>1</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Haga</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -655,7 +657,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1072" data-tranca_tipo="cadeado" data-tranca_marca="Gold" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-1072" data-tranca_tipo="cadeado" data-tranca_marca="Gold" data-altura="0.8" data-comprimento="2.4" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1072</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -666,12 +668,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>d1</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">cadeado Gold</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.8</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.4</strong></p>
             </div>
           </div>
         </div>
@@ -679,7 +681,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-826" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-826" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0.6" data-comprimento="2.1" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>826</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -694,8 +696,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura 3F</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.1</strong></p>
             </div>
           </div>
         </div>
@@ -703,7 +705,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-799" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-799" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.7" data-comprimento="2.1" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>799</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -714,12 +716,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>d3</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.1</strong></p>
             </div>
           </div>
         </div>
@@ -727,7 +729,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-303" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-303" data-tranca_tipo="" data-tranca_marca="Fama" data-altura="0.7" data-comprimento="2.3" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>303</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -738,12 +740,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>d4</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Fama</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.3</strong></p>
             </div>
           </div>
         </div>
@@ -751,7 +753,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1117" data-tranca_tipo="fechadura" data-tranca_marca="Hela" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-1117" data-tranca_tipo="fechadura" data-tranca_marca="Hela" data-altura="0.7" data-comprimento="2.15" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1117</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -766,8 +768,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Hela</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.15</strong></p>
             </div>
           </div>
         </div>
@@ -775,7 +777,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-150" data-tranca_tipo="fechadura" data-tranca_marca="Papaiz" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-150" data-tranca_tipo="fechadura" data-tranca_marca="Papaiz" data-altura="0.75" data-comprimento="2.3" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>150</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -786,12 +788,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>d6</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>6</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>6</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Papaiz</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.75</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.3</strong></p>
             </div>
           </div>
         </div>
@@ -799,7 +801,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1118" data-tranca_tipo="fechadura" data-tranca_marca="Hela" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-1118" data-tranca_tipo="fechadura" data-tranca_marca="Hela" data-altura="0.7" data-comprimento="2.2" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1118</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -810,12 +812,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>d7</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Hela</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -823,7 +825,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1126" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-1126" data-tranca_tipo="fechadura" data-tranca_marca="3F" data-altura="0.6" data-comprimento="2.05" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1126</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -836,10 +838,10 @@
               <p class="mb-0 card-line posição">Posição: <strong>e1</strong></p>
               <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
               <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
-              <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
+              <p class="mb-0 card-line saidas">Saidas: <strong>1</strong></p>
               <p class="mb-0 card-line tranca">fechadura 3F</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.05</strong></p>
             </div>
           </div>
         </div>
@@ -847,7 +849,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-179" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-179" data-tranca_tipo="" data-tranca_marca="Pado" data-altura="0.65" data-comprimento="2.45" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>179</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -858,12 +860,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>e2</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Pado</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.45</strong></p>
             </div>
           </div>
         </div>
@@ -871,7 +873,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-804" data-tranca_tipo="" data-tranca_marca="3F" data-altura="0" data-comprimento="0" data-formato="ai">
+          <div class="card-body" id="k-804" data-tranca_tipo="" data-tranca_marca="3F" data-altura="0.6" data-comprimento="2.25" data-formato="ai">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>804</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -886,8 +888,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> 3F</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.25</strong></p>
             </div>
           </div>
         </div>
@@ -895,7 +897,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1097" data-tranca_tipo="" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="outros">
+          <div class="card-body" id="k-1097" data-tranca_tipo="" data-tranca_marca="Soprano" data-altura="0.6" data-comprimento="1.6" data-formato="outros">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1097</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -910,8 +912,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Soprano</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>1.6</strong></p>
             </div>
           </div>
         </div>
@@ -919,7 +921,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-832" data-tranca_tipo="fechadura" data-tranca_marca="Arouca" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-832" data-tranca_tipo="fechadura" data-tranca_marca="Arouca" data-altura="0.6" data-comprimento="2.05" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>832</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -930,12 +932,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>e5</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>8</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>4</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>7</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>3</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Arouca</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.05</strong></p>
             </div>
           </div>
         </div>
@@ -943,7 +945,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-300" data-tranca_tipo="cadeado" data-tranca_marca="Pado" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-300" data-tranca_tipo="cadeado" data-tranca_marca="Pado" data-altura="0.8" data-comprimento="2.95" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>300</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -958,8 +960,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>6</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">cadeado Pado</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.8</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.95</strong></p>
             </div>
           </div>
         </div>
@@ -967,7 +969,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-16" data-tranca_tipo="" data-tranca_marca="La Fonte" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-16" data-tranca_tipo="" data-tranca_marca="La Fonte" data-altura="0.75" data-comprimento="2.6" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>16</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -982,8 +984,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> La Fonte</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.75</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.6</strong></p>
             </div>
           </div>
         </div>
@@ -991,7 +993,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1080" data-tranca_tipo="" data-tranca_marca="MGM" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-1080" data-tranca_tipo="" data-tranca_marca="MGM" data-altura="0.75" data-comprimento="2.4" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1080</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1002,12 +1004,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>f1</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> MGM</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.75</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.4</strong></p>
             </div>
           </div>
         </div>
@@ -1015,7 +1017,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1129" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0" data-comprimento="0" data-formato="be">
+          <div class="card-body" id="k-1129" data-tranca_tipo="fechadura" data-tranca_marca="Haga" data-altura="0.6" data-comprimento="2.15" data-formato="be">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1129</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1026,12 +1028,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>f2</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Haga</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.15</strong></p>
             </div>
           </div>
         </div>
@@ -1039,7 +1041,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-519" data-tranca_tipo="" data-tranca_marca="Papaiz" data-altura="0" data-comprimento="0" data-formato="c">
+          <div class="card-body" id="k-519" data-tranca_tipo="" data-tranca_marca="Papaiz" data-altura="0.65" data-comprimento="2.2" data-formato="c">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>519</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1054,8 +1056,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>8</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Papaiz</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -1063,7 +1065,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-477" data-tranca_tipo="fechadura" data-tranca_marca="Aliança" data-altura="0" data-comprimento="0" data-formato="b">
+          <div class="card-body" id="k-477" data-tranca_tipo="fechadura" data-tranca_marca="Aliança" data-altura="0.7" data-comprimento="2.3" data-formato="b">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>477</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1074,12 +1076,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>f4</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>3</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>3</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Aliança</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.3</strong></p>
             </div>
           </div>
         </div>
@@ -1087,7 +1089,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1030" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ce">
+          <div class="card-body" id="k-1030" data-tranca_tipo="fechadura" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="2.2" data-formato="ce">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1030</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1102,8 +1104,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>7</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -1111,7 +1113,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-999" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="ae">
+          <div class="card-body" id="k-999" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0.25" data-comprimento="2.2" data-formato="ae">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>999</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1126,8 +1128,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.25</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -1135,7 +1137,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-27" data-tranca_tipo="" data-tranca_marca="" data-altura="0" data-comprimento="0" data-formato="">
+          <div class="card-body" id="k-27" data-tranca_tipo="" data-tranca_marca="" data-altura="0.7" data-comprimento="2.25" data-formato="">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>27</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1148,8 +1150,8 @@
               <p class="mb-0 card-line painel">Painel:<strong>10</strong> Estoque:<strong>7</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> </p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.25</strong></p>
             </div>
           </div>
         </div>
@@ -1157,7 +1159,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-605" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0" data-comprimento="0" data-formato="a">
+          <div class="card-body" id="k-605" data-tranca_tipo="" data-tranca_marca="Stam" data-altura="0.6" data-comprimento="2.25" data-formato="a">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>605</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1168,12 +1170,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>g1</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca"> Stam</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.6</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.25</strong></p>
             </div>
           </div>
         </div>
@@ -1181,7 +1183,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-1151" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0" data-comprimento="0" data-formato="ci">
+          <div class="card-body" id="k-1151" data-tranca_tipo="fechadura" data-tranca_marca="Soprano" data-altura="0.7" data-comprimento="2.2" data-formato="ci">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>1151</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1192,12 +1194,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>g2</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>2</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>2</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Soprano</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.7</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.2</strong></p>
             </div>
           </div>
         </div>
@@ -1205,7 +1207,7 @@
   
       <div class="mb-2 me-2 w-auto card-container">
         <div class="card">
-          <div class="card-body" id="k-109" data-tranca_tipo="fechadura" data-tranca_marca="Pacri" data-altura="0" data-comprimento="0" data-formato="ce">
+          <div class="card-body" id="k-109" data-tranca_tipo="fechadura" data-tranca_marca="Pacri" data-altura="0.65" data-comprimento="2.45" data-formato="ce">
             <div class="text-center mb-2">
               <h2 class="card-title d-inline"><strong>109</strong></h2>
               <h6 class="d-inline">Gold</h6>
@@ -1216,12 +1218,12 @@
         </div>
               <p class="mb-0 card-line tipo">Tipo: <strong>yale</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>g3</strong></p>
-              <p class="mb-0 card-line quantidade">Quantidade: <strong>4</strong></p>
-              <p class="mb-0 card-line painel">Painel:<strong>4</strong> Estoque:<strong>0</strong></p>
+              <p class="mb-0 card-line quantidade">Quantidade: <strong>5</strong></p>
+              <p class="mb-0 card-line painel">Painel:<strong>5</strong> Estoque:<strong>0</strong></p>
               <p class="mb-0 card-line saidas">Saidas: <strong>0</strong></p>
               <p class="mb-0 card-line tranca">fechadura Pacri</p>
-              <p class="mb-0 card-line altura">Altura: <strong>0</strong></p>
-              <p class="mb-0 card-line comprimento">Comprimento: <strong>0</strong></p>
+              <p class="mb-0 card-line altura">Altura: <strong>0.65</strong></p>
+              <p class="mb-0 card-line comprimento">Comprimento: <strong>2.45</strong></p>
             </div>
           </div>
         </div>
@@ -1982,7 +1984,7 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="/socket.io/socket.io.js"></script>
