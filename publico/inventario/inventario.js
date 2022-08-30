@@ -1,38 +1,25 @@
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// -------------------------SETUP-------------------------
+
 const socket = io();
+
+const $ = (selector)=>{
+    const elements = document.querySelectorAll(selector)
+    if (elements.length == 1) {
+        return elements[0]
+    } else {
+        return elements
+    }
+}
+
+window.scrollTo(0,0)
 
 stop_loading();
 
 numero_a_filtrar.focus()
 
-chaves.addEventListener('dblclick', event=>{
-  event.path.forEach(i=>{
-   try {
-    if (i.id.includes('k-')) {
-      card_number = i.id.slice(2)
-      background.style.display = 'block'
-      container.style.display = 'block'
-      card_title.innerText = card_number
+let ordem_status = 'painel'
 
-      socket.emit('keys')
-      socket.once('keys return', (obj)=>{
-        obj.forEach(key=>{
-          if (key.key.numero == card_number) {
-            input_numero.value = key.key.numero
-            input_quantidade_painel.value = key.key.painel
-            input_quantidade_estoque.value = key.key.estoque
-            console.log(key.key.altura)
-            input_altura.value = key.key.altura
-            input_comprimento.value = key.key.comprimento
-          }
-        })
-      })
-    }
-   } catch (error) {
-   }
-  })
-})
+// -------------------------Functions-------------------------
 
 const fechar_popup = ()=>{
   background.style.display = 'none'
@@ -40,23 +27,16 @@ const fechar_popup = ()=>{
   document.querySelector(`#k-${card_title.innerText}`).scrollIntoView();
 }
 
-window.onclick = event=>{
-  if (event.target == background) {
-    fechar_popup()
+const toggle_image = (div)=>{
+  element_img = div.querySelector('[id^="key-"]')
+  const display = element_img.style.display
+  if (display == 'block') {
+    element_img.style.display = 'none'
+  } else {
+    element_img.style.display = 'block'
   }
-}
-fechar_popup2.addEventListener('click', fechar_popup)
 
-resetar_filtro.addEventListener('click', ()=>{
-  altura.value = ''
-  comprimento.value = ''
-  numero_a_filtrar.value = ''
-  ordem.value = 'painel'
-  tranca.value = 'todas'
-  tranca_marca.value = 'todas'
-  document.querySelector('[name="formato"][value="todos"]').checked = true
-  filtrar.click()
-})
+}
 
 const filtrar_numero = ()=>{
   if (numero_a_filtrar.value.includes('-')) {
@@ -70,22 +50,48 @@ const filtrar_numero = ()=>{
       element.style.display = 'none'
     }
   })
-
+  if (numero_a_filtrar.value == 'update*') {
+    console.log('update')
+    numero_a_filtrar.value = ''
+    socket.emit('update-chaves-html', $('#chaves').innerHTML)
+    socket.once('reload', ()=>{location.reload(true);})
+  }
 }
+// -------------------------Listeners-------------------------
+
+$('#ordem').addEventListener('change', ()=>{
+  ordem_status = ordem.value
+})
+
+$('[name="formato"]:not([value="todos"])').forEach(element=>{element.addEventListener('click', ()=>{ordem.value = 'formatos'})})
+
+$('[name="formato"]:not([value="a"]):not([value="b"]):not([value="c"])').forEach(element=>{element.addEventListener('click', ()=>{ordem.value = ordem_status})})
+
+window.onclick = event=>{
+  if (event.target == background) {
+    fechar_popup()
+  }
+}
+
+fechar_popup2.addEventListener('click', fechar_popup)
+
+resetar_filtro.addEventListener('click', ()=>{
+  altura.value = ''
+  comprimento.value = ''
+  altura_exato.checked = false
+  comprimento_exato.checked = false
+  numero_a_filtrar.value = ''
+  ordem.value = 'painel'
+  tranca.value = 'todas'
+  tranca_marca.value = 'todas'
+  document.querySelector('[name="formato"][value="todos"]').checked = true
+  filtrar.click()
+})
 
 numero_a_filtrar.addEventListener('input', filtrar_numero)
 
-// filtrar_numero()
-
-// -------------------------------------------------------------
-const $ = (selector)=>{
-    const elements = document.querySelectorAll(selector)
-    if (elements.length == 1) {
-        return elements[0]
-    } else {
-        return elements
-    }
-}
+filtrar_numero()
+// -------------------------SORT FUNCTIONS-------------------------
 
 const decrescente = ( a, b )=>{
   const a_total =  a.key.painel+a.key.estoque
@@ -137,7 +143,7 @@ const formatos = ( a, b )=>{
   return 0;
 }
 
-// -------------------------------------------------------------
+// -------------------------FILTRAR-------------------------
 
 filtrar.onclick = ()=>{
   socket.emit('keys')
@@ -181,11 +187,12 @@ filtrar.onclick = ()=>{
       let key_altura = obj.key.altura;
       let key_comprimento = obj.key.comprimento;
 
-      let key_icon = '';
+      let key_images = '';
 
       if (key_tipo == 'yale' && !key_number.includes('vago') && key_number != '27') {
-        key_icon = `<div class="text-center mb-2">
-          <img src="../publico/shape/${key_number}.svg" alt="">
+        key_images = `<div class="text-center mb-2 image-container" onclick="toggle_image(this)">
+          <img src="../publico/shape/${key_number}.svg" alt="" id="shape-${key_number}">
+          <img src="../publico/keys/${key_number}.svg" alt="" id="key-${key_number}">
         </div>`
       };
       element += `
@@ -197,7 +204,7 @@ filtrar.onclick = ()=>{
               <h6 class="d-inline">${key_marca}</h6>
             </div>
             <div class="card-text">
-              ${key_icon}
+              ${key_images}
               <p class="mb-0 card-line tipo">Tipo: <strong>${key_tipo}</strong></p>
               <p class="mb-0 card-line posição">Posição: <strong>${key_posição}</strong></p>
               <p class="mb-0 card-line quantidade">Quantidade: <strong>${key_quantidade}</strong></p>
@@ -240,83 +247,37 @@ filtrar.onclick = ()=>{
         $(`.card-body:not([data-formato^="${i}"])`).forEach(card_body=>{
           card_body.closest('.card-container').remove();
         });
-      }
+      };
     });
 
-  if (altura.value != '') {
-    const altura_da_chave = Number(altura.value)
-    const menor_altura = (altura_da_chave - 0.05).toFixed(2)
-    const maior_altura = (altura_da_chave + 0.05).toFixed(2)
-    if ($('#altura_exato').checked) {
-      console.log(0)
-      $('.card-body').forEach(card_body=>{
-        card_altura = Number(card_body.dataset.altura);
-        if (card_altura < menor_altura || card_altura > maior_altura) {
-          card_body.closest('.card-container').remove();
+  [altura, comprimento]
+    .forEach((element, i)=>{
+      if (element.value != '') {
+        const tamanho_da_chave = Number(element.value)
+        const menor_tamanho = (tamanho_da_chave - 0.05).toFixed(2)
+        const maior_tamanho = (tamanho_da_chave + 0.05).toFixed(2)
+        const t = ['altura', 'comprimento'][i]
+
+        if ($(`#${t}_exato`).checked) {
+          $('.card-body').forEach(card_body=>{
+            card_tamanho = Number(card_body.dataset[t]);
+            if (card_tamanho < menor_tamanho || card_tamanho > maior_tamanho) {
+              card_body.closest('.card-container').remove();
+            };
+          });
+        } else {
+          $('.card-body').forEach(card_body=>{
+            card_tamanho = Number(card_body.dataset[t]);
+            if (card_tamanho < menor_tamanho) {
+              card_body.closest('.card-container').remove();
+            };
+          });
         };
-      });
-    } else {
-      console.log(1)
-      $('.card-body').forEach(card_body=>{
-        card_altura = Number(card_body.dataset.altura);
-        if (card_altura < menor_altura) {
-          card_body.closest('.card-container').remove();
-        };
-      });
-    };
 
-  };
+      };
+    });
 
-
-  if (comprimento.value != '') {
-    const comprimento_da_chave = Number(comprimento.value)
-    const menor_comprimento = (comprimento_da_chave - 0.05).toFixed(2)
-    const maior_comprimento = (comprimento_da_chave + 0.05).toFixed(2)
-    if ($('#comprimento_exato').checked) {
-      console.log(0)
-      $('.card-body').forEach(card_body=>{
-        card_comprimento = Number(card_body.dataset.comprimento);
-        if (card_comprimento < menor_comprimento || card_comprimento > maior_comprimento) {
-          card_body.closest('.card-container').remove();
-        };
-      });
-    } else {
-      console.log(1)
-      $('.card-body').forEach(card_body=>{
-        card_comprimento = Number(card_body.dataset.comprimento);
-        if (card_comprimento < menor_comprimento) {
-          card_body.closest('.card-container').remove();
-        };
-      });
-    };
-
-  };
-
-
-
-  // $('#altura').val(filtro.altura)
-  // if (filtro.altura != '') {
-  //   console.log(filtro.altura)
-  //   $('.card-body').not((i, element)=>{
-  //     const altura = Number($(element).data('altura'))
-  //     filtro.altura = Number(filtro.altura)
-  //     if (altura >= filtro.altura && altura <= filtro.altura + 0.3) {
-  //       return $(element).data('altura')
-  //     }
-  //   }).parent().parent().remove()
-  // }
-
-  // $('#comprimento').val(filtro.comprimento)
-  // if (filtro.comprimento != '') {
-  //   console.log(filtro.comprimento)
-  //   $('.card-body').not((i, element)=>{
-  //     const comprimento = Number($(element).data('comprimento'))
-  //     filtro.comprimento = Number(filtro.comprimento)
-  //     if (comprimento >= filtro.comprimento) {
-  //       return $(element).data('comprimento')
-  //     }
-  //   }).parent().parent().remove()
-  // }
+  filtrar_numero()
 
   })
 

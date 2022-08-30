@@ -47,6 +47,17 @@ select{
   border: 1px solid #ced4da;
   border-radius: 0.375rem;
 }
+#formato_a, #formato_b, #formato_c{
+  display: none;
+}
+[id^="shape-"]{
+  cursor: pointer;
+  user-select: none;
+}
+[id^="key-"]{
+  display: none;
+}
+
 .tipo strong{color: ;}
 .posição strong{color: blue;}
 .quantidade strong{color: ;}

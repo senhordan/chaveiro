@@ -36,7 +36,7 @@ const read_file = ()=>{
   return keys
 }
 
-const criar_inventario = require('./modulos/escrever_inventario.js')
+const editar_html = require('./modulos/escrever_inventario.js')
 
 const create_backup = (arg)=>{
   const backups = read_backups()
@@ -129,6 +129,11 @@ app.get('/inventario', (req, res)=>{
         let keys = read_file()
 
         socket.emit('keys return', keys)
+      });
+
+      socket.on('update-chaves-html', (chaves)=>{
+        editar_html(chaves)
+        socket.emit('reload')
       })
 
       socket.once('disconnect', ()=>{
@@ -148,7 +153,7 @@ app.post('/inventario', (req, res)=>{
     let keys = read_file()
     switch (req.body.form) {
       case 'form1':
-        criar_inventario(keys, req.body)
+        // criar_inventario(keys, req.body)
         res.redirect('inventario')
         break;
       case 'form2':
