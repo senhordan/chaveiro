@@ -1,0 +1,42 @@
+[
+  {
+    "serviços": "",
+    "preço": 0,
+    "data": "00/00/22"
+  },
+  {
+    "serviços": "abertura",
+    "preço": 30,
+    "data": "20/10/22"
+  },
+  {
+    "serviços": "copia de chave(682)",
+    "preço": 5,
+    "data": "11/10/22"
+  },
+  {
+    "serviços": "abertura + troca de miolo",
+    "preço": 100,
+    "data": "28/09/26"
+  },
+  {
+    "serviços": "confecção de chave + copia *2",
+    "preço": 20,
+    "data": "26/09/26"
+  },
+  {
+    "serviços": "copia de chave(1126)",
+    "preço": 4,
+    "data": "26/09/26"
+  },
+  {
+    "serviços": "copia de chave(682)",
+    "preço": 6,
+    "data": "21/09/22"
+  },
+  {
+    "serviços": "caixa",
+    "preço": 31.85,
+    "data": "21/09/22"
+  }
+]

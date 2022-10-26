@@ -13,17 +13,35 @@ const $ = (selector)=>{
 
 window.scrollTo(0,0)
 
-stop_loading();
-
 numero_a_filtrar.focus()
 
 let ordem_status = 'painel'
 
 // -------------------------Functions-------------------------
 
+const abrir_popup = (element)=>{
+
+  card_title.innerText = element.querySelector('.card-title.d-inline').innerText
+  input_numero.value = card_title.innerText
+  background.style.display = 'block'
+
+  socket.emit('keys')
+  socket.on('keys return', (json)=>{
+    json.forEach(obj=>{
+      if (obj.key.numero == card_title.innerText) {
+        console.log(obj.key)
+        input_quantidade_painel.value = obj.key.painel
+        input_quantidade_estoque.value = obj.key.estoque
+        input_saidas.value = obj.key.saidas
+      }
+    })
+  })
+
+  // })
+}
+
 const fechar_popup = ()=>{
   background.style.display = 'none'
-  container.style.display = 'none'
   document.querySelector(`#k-${card_title.innerText}`).scrollIntoView();
 }
 
@@ -58,6 +76,8 @@ const filtrar_numero = ()=>{
   }
 }
 // -------------------------Listeners-------------------------
+
+
 
 $('#ordem').addEventListener('change', ()=>{
   ordem_status = ordem.value
@@ -196,7 +216,7 @@ filtrar.onclick = ()=>{
         </div>`
       };
       element += `
-      <div class="mb-2 me-2 w-auto card-container">
+      <div class="mb-2 me-2 w-auto card-container" ondblclick="abrir_popup(this)">
         <div class="card">
           <div class="card-body" id="k-${key_number}" data-tranca_tipo="${key_tranca_tipo}" data-tranca_marca="${key_tranca_marca}" data-altura=${key_altura} data-comprimento="${key_comprimento}" data-formato="${key_formato}">
             <div class="text-center mb-2">
@@ -283,3 +303,6 @@ filtrar.onclick = ()=>{
 
 }
 
+filtrar.click()
+
+stop_loading();

@@ -1,0 +1,650 @@
+[{"key":{"numero":"846","linha":"a","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"a","comprimento":1.75,"altura":0.6,"saidas":0}},{"key":{"numero":"1112","linha":"a","coluna":2,"painel":2,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"a","comprimento":1.7,"altura":0.6,"saidas":0}},{"key":{"numero":"1110","linha":"a","coluna":3,"painel":2,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"ae","comprimento":1.7,"altura":0.6,"saidas":0}},{"key":{"numero":"611","linha":"a","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"ae","comprimento":2.05,"altura":0.7,"saidas":0}},{"key":{"numero":"72","linha":"a","coluna":5,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Aliança"],"formato":"b","comprimento":2.25,"altura":0.75,"saidas":0}},{"key":{"numero":"2","linha":"a","coluna":6,"painel":2,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["",""],"formato":"b","comprimento":2.75,"altura":0.8,"saidas":0}},{"key":{"numero":"380","linha":"a","coluna":7,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Haga"],"formato":"c","comprimento":2.15,"altura":0.65,"saidas":0}},{"key":{"numero":"544","linha":"b","coluna":1,"painel":8,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"a","comprimento":2.1,"altura":0.6,"saidas":0}},{"key":{"numero":"543","linha":"b","coluna":2,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"ae","comprimento":2.1,"altura":0.6,"saidas":0}},{"key":{"numero":"721","linha":"b","coluna":3,"painel":9,"estoque":8,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Imab"],"formato":"b","comprimento":2.3,"altura":0.7,"saidas":0}},{"key":{"numero":"1120","linha":"b","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Gold"],"formato":"outros","comprimento":1.55,"altura":0.65,"saidas":0}},{"key":{"numero":"1024","linha":"b","coluna":5,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Amelco"],"formato":"be","comprimento":2.2,"altura":0.8,"saidas":0}},{"key":{"numero":"267","linha":"b","coluna":6,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Haga"],"formato":"be","comprimento":2.25,"altura":0.75,"saidas":0}},{"key":{"numero":"vago-1","linha":"b","coluna":7,"painel":0,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"714","linha":"c","coluna":1,"painel":11,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","HDL"],"formato":"be","comprimento":2.75,"altura":0.85,"saidas":0}},{"key":{"numero":"800","linha":"c","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Haga"],"formato":"ae","comprimento":2.15,"altura":0.65,"saidas":0}},{"key":{"numero":"30","linha":"c","coluna":3,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Fama"],"formato":"c","comprimento":2.7,"altura":0.65,"saidas":0}},{"key":{"numero":"1063","linha":"c","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","HDL"],"formato":"c","comprimento":2.85,"altura":0.8,"saidas":0}},{"key":{"numero":"vago-2","linha":"c","coluna":5,"painel":0,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"848","linha":"c","coluna":6,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Amelco"],"formato":"b","comprimento":2.2,"altura":0.85,"saidas":0}},{"key":{"numero":"381","linha":"c","coluna":7,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Haga"],"formato":"ci","comprimento":2.2,"altura":0.65,"saidas":0}},{"key":{"numero":"1072","linha":"d","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Gold"],"formato":"b","comprimento":2.4,"altura":0.8,"saidas":0}},{"key":{"numero":"826","linha":"d","coluna":2,"painel":2,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","3F"],"formato":"a","comprimento":2.1,"altura":0.6,"saidas":0}},{"key":{"numero":"799","linha":"d","coluna":3,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"ae","comprimento":2.1,"altura":0.7,"saidas":0}},{"key":{"numero":"303","linha":"d","coluna":4,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Fama"],"formato":"c","comprimento":2.3,"altura":0.7,"saidas":0}},{"key":{"numero":"1117","linha":"d","coluna":5,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Hela"],"formato":"ae","comprimento":2.15,"altura":0.7,"saidas":0}},{"key":{"numero":"150","linha":"d","coluna":6,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Papaiz"],"formato":"c","comprimento":2.3,"altura":0.75,"saidas":0}},{"key":{"numero":"1118","linha":"d","coluna":7,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Hela"],"formato":"c","comprimento":2.2,"altura":0.7,"saidas":0}},{"key":{"numero":"1126","linha":"e","coluna":1,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","3F"],"formato":"c","comprimento":2.05,"altura":0.6,"saidas":1}},{"key":{"numero":"179","linha":"e","coluna":2,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"c","comprimento":2.45,"altura":0.65,"saidas":0}},{"key":{"numero":"804","linha":"e","coluna":3,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","3F"],"formato":"ai","comprimento":2.25,"altura":0.6,"saidas":0}},{"key":{"numero":"1097","linha":"e","coluna":4,"painel":7,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Soprano"],"formato":"outros","comprimento":1.6,"altura":0.6,"saidas":0}},{"key":{"numero":"832","linha":"e","coluna":5,"painel":4,"estoque":3,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Arouca"],"formato":"a","comprimento":2.05,"altura":0.6,"saidas":0}},{"key":{"numero":"300","linha":"e","coluna":6,"painel":6,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Pado"],"formato":"c","comprimento":2.95,"altura":0.8,"saidas":0}},{"key":{"numero":"16","linha":"e","coluna":7,"painel":10,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","La Fonte"],"formato":"b","comprimento":2.6,"altura":0.75,"saidas":0}},{"key":{"numero":"1080","linha":"f","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","MGM"],"formato":"c","comprimento":2.4,"altura":0.75,"saidas":0}},{"key":{"numero":"1129","linha":"f","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Haga"],"formato":"be","comprimento":2.15,"altura":0.6,"saidas":0}},{"key":{"numero":"519","linha":"f","coluna":3,"painel":7,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Papaiz"],"formato":"c","comprimento":2.2,"altura":0.65,"saidas":0}},{"key":{"numero":"477","linha":"f","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Aliança"],"formato":"b","comprimento":2.3,"altura":0.7,"saidas":0}},{"key":{"numero":"1030","linha":"f","coluna":5,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Stam"],"formato":"ce","comprimento":2.2,"altura":0.6,"saidas":0}},{"key":{"numero":"999","linha":"f","coluna":6,"painel":10,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Stam"],"formato":"ae","comprimento":2.2,"altura":0.25,"saidas":0}},{"key":{"numero":"27","linha":"f","coluna":7,"painel":10,"estoque":7,"marca":"Gold","tipo":"yale","similares":[],"tranca":["",""],"formato":"","comprimento":2.25,"altura":0.7,"saidas":0}},{"key":{"numero":"605","linha":"g","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Stam"],"formato":"a","comprimento":2.25,"altura":0.6,"saidas":0}},{"key":{"numero":"1151","linha":"g","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Soprano"],"formato":"ci","comprimento":2.2,"altura":0.7,"saidas":0}},{"key":{"numero":"109","linha":"g","coluna":3,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Pacri"],"formato":"ce","comprimento":2.45,"altura":0.65,"saidas":0}},{"key":{"numero":"1194","linha":"g","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Soprano"],"formato":"outros","comprimento":2.45,"altura":0.8,"saidas":0}},{"key":{"numero":"688","linha":"g","coluna":5,"painel":8,"estoque":3,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"ce","comprimento":1.8,"altura":0.6,"saidas":0}},{"key":{"numero":"682","linha":"g","coluna":6,"painel":6,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"c","comprimento":2.15,"altura":0.75,"saidas":0}},{"key":{"numero":"698","linha":"g","coluna":7,"painel":3,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Brasil"],"formato":"be","comprimento":1.8,"altura":0.6,"saidas":0}},{"key":{"numero":"1040","linha":"h","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","3F"],"formato":"a","comprimento":2.15,"altura":0.6,"saidas":0}},{"key":{"numero":"596","linha":"h","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Gold"],"formato":"outros","comprimento":2.1,"altura":0.75,"saidas":0}},{"key":{"numero":"1007","linha":"h","coluna":3,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","MGM"],"formato":"outros","comprimento":2.4,"altura":0.75,"saidas":0}},{"key":{"numero":"1042","linha":"h","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","kwikset"],"formato":"b","comprimento":2.7,"altura":0.8,"saidas":0}},{"key":{"numero":"175","linha":"h","coluna":5,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"ce","comprimento":2.45,"altura":0.7,"saidas":0}},{"key":{"numero":"398","linha":"h","coluna":6,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Lockwell"],"formato":"c","comprimento":2.8,"altura":0.9,"saidas":0}},{"key":{"numero":"397","linha":"h","coluna":7,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Soprano"],"formato":"b","comprimento":2.45,"altura":0.75,"saidas":0}},{"key":{"numero":"792","linha":"i","coluna":1,"painel":4,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Soprano"],"formato":"b","comprimento":2.7,"altura":0.85,"saidas":0}},{"key":{"numero":"595","linha":"i","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Gold"],"formato":"outros","comprimento":1.7,"altura":0.7,"saidas":0}},{"key":{"numero":"817","linha":"i","coluna":3,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Arouca"],"formato":"outros","comprimento":2.25,"altura":0.7,"saidas":0}},{"key":{"numero":"829","linha":"i","coluna":4,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","3F"],"formato":"c","comprimento":2.2,"altura":0.6,"saidas":0}},{"key":{"numero":"733","linha":"i","coluna":5,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Globe"],"formato":"ce","comprimento":2,"altura":0.6,"saidas":0}},{"key":{"numero":"716","linha":"i","coluna":6,"painel":2,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["cadeado","Papaiz"],"formato":"c","comprimento":1.85,"altura":0.7,"saidas":0}},{"key":{"numero":"905","linha":"i","coluna":7,"painel":3,"estoque":0,"marca":"Gold","tipo":"tetra","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"667","linha":"j","coluna":1,"painel":3,"estoque":0,"marca":"Gold","tipo":"tetra","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"665","linha":"j","coluna":2,"painel":3,"estoque":0,"marca":"Gold","tipo":"tetra","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"933","linha":"j","coluna":3,"painel":3,"estoque":0,"marca":"Gold","tipo":"tetra","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"183","linha":"j","coluna":4,"painel":3,"estoque":0,"marca":"Gold","tipo":"tetra","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"vago-3","linha":"j","coluna":5,"painel":0,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["",""],"formato":"","comprimento":0,"altura":0,"saidas":0}},{"key":{"numero":"707","linha":"j","coluna":6,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"ce","comprimento":2.5,"altura":0.8,"saidas":0}},{"key":{"numero":"1085","linha":"j","coluna":7,"painel":1,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","MGM"],"formato":"c","comprimento":2.15,"altura":0.65,"saidas":0}},{"key":{"numero":"858","linha":"k","coluna":1,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","La Fonte"],"formato":"b","comprimento":2.45,"altura":0.75,"saidas":0}},{"key":{"numero":"1039","linha":"k","coluna":2,"painel":5,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Lockwell"],"formato":"aei","comprimento":2.3,"altura":0.8,"saidas":0}},{"key":{"numero":"693","linha":"k","coluna":3,"painel":8,"estoque":0,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"c","comprimento":1.8,"altura":0.6,"saidas":0}},{"key":{"numero":"512","linha":"k","coluna":4,"painel":11,"estoque":12,"marca":"Gold","tipo":"yale","similares":[],"tranca":["fechadura","Brasil"],"formato":"be","comprimento":2.25,"altura":0.6,"saidas":0}},{"key":{"numero":"691","linha":"000","coluna":0,"painel":0,"estoque":5,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"ce","comprimento":1.6,"altura":0.5,"saidas":0}},{"key":{"numero":"694","linha":"000","coluna":0,"painel":0,"estoque":3,"marca":"Gold","tipo":"yale","similares":[],"tranca":["","Pado"],"formato":"cei","comprimento":1.6,"altura":0.5,"saidas":0}}]dura",
+        "Soprano"
+      ],
+      "formato": "ci",
+      "comprimento": 2.2,
+      "altura": 0.7,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "109",
+      "linha": "g",
+      "coluna": 3,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Pacri"
+      ],
+      "formato": "ce",
+      "comprimento": 2.45,
+      "altura": 0.65,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1194",
+      "linha": "g",
+      "coluna": 4,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
+      "formato": "outros",
+      "comprimento": 2.45,
+      "altura": 0.8,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "688",
+      "linha": "g",
+      "coluna": 5,
+      "painel": 8,
+      "estoque": 3,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "ce",
+      "comprimento": 1.8,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "682",
+      "linha": "g",
+      "coluna": 6,
+      "painel": 6,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "c",
+      "comprimento": 2.15,
+      "altura": 0.75,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "698",
+      "linha": "g",
+      "coluna": 7,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "cadeado",
+        "Brasil"
+      ],
+      "formato": "be",
+      "comprimento": 1.8,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1040",
+      "linha": "h",
+      "coluna": 1,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "3F"
+      ],
+      "formato": "a",
+      "comprimento": 2.15,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "596",
+      "linha": "h",
+      "coluna": 2,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "cadeado",
+        "Gold"
+      ],
+      "formato": "outros",
+      "comprimento": 2.1,
+      "altura": 0.75,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1007",
+      "linha": "h",
+      "coluna": 3,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "MGM"
+      ],
+      "formato": "outros",
+      "comprimento": 2.4,
+      "altura": 0.75,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1042",
+      "linha": "h",
+      "coluna": 4,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "kwikset"
+      ],
+      "formato": "b",
+      "comprimento": 2.7,
+      "altura": 0.8,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "175",
+      "linha": "h",
+      "coluna": 5,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "ce",
+      "comprimento": 2.45,
+      "altura": 0.7,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "398",
+      "linha": "h",
+      "coluna": 6,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Lockwell"
+      ],
+      "formato": "c",
+      "comprimento": 2.8,
+      "altura": 0.9,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "397",
+      "linha": "h",
+      "coluna": 7,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
+      "formato": "b",
+      "comprimento": 2.45,
+      "altura": 0.75,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "792",
+      "linha": "i",
+      "coluna": 1,
+      "painel": 4,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Soprano"
+      ],
+      "formato": "b",
+      "comprimento": 2.7,
+      "altura": 0.85,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "595",
+      "linha": "i",
+      "coluna": 2,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "cadeado",
+        "Gold"
+      ],
+      "formato": "outros",
+      "comprimento": 1.7,
+      "altura": 0.7,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "817",
+      "linha": "i",
+      "coluna": 3,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Arouca"
+      ],
+      "formato": "outros",
+      "comprimento": 2.25,
+      "altura": 0.7,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "829",
+      "linha": "i",
+      "coluna": 4,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "3F"
+      ],
+      "formato": "c",
+      "comprimento": 2.2,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "733",
+      "linha": "i",
+      "coluna": 5,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Globe"
+      ],
+      "formato": "ce",
+      "comprimento": 2,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "716",
+      "linha": "i",
+      "coluna": 6,
+      "painel": 2,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "cadeado",
+        "Papaiz"
+      ],
+      "formato": "c",
+      "comprimento": 1.85,
+      "altura": 0.7,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "905",
+      "linha": "i",
+      "coluna": 7,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "667",
+      "linha": "j",
+      "coluna": 1,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "665",
+      "linha": "j",
+      "coluna": 2,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "933",
+      "linha": "j",
+      "coluna": 3,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "183",
+      "linha": "j",
+      "coluna": 4,
+      "painel": 3,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "tetra",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "vago-3",
+      "linha": "j",
+      "coluna": 5,
+      "painel": 0,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        ""
+      ],
+      "formato": "",
+      "comprimento": 0,
+      "altura": 0,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "707",
+      "linha": "j",
+      "coluna": 6,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "ce",
+      "comprimento": 2.5,
+      "altura": 0.8,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1085",
+      "linha": "j",
+      "coluna": 7,
+      "painel": 1,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "MGM"
+      ],
+      "formato": "c",
+      "comprimento": 2.15,
+      "altura": 0.65,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "858",
+      "linha": "k",
+      "coluna": 1,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "La Fonte"
+      ],
+      "formato": "b",
+      "comprimento": 2.45,
+      "altura": 0.75,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "1039",
+      "linha": "k",
+      "coluna": 2,
+      "painel": 5,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Lockwell"
+      ],
+      "formato": "aei",
+      "comprimento": 2.3,
+      "altura": 0.8,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "693",
+      "linha": "k",
+      "coluna": 3,
+      "painel": 8,
+      "estoque": 0,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "c",
+      "comprimento": 1.8,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "512",
+      "linha": "k",
+      "coluna": 4,
+      "painel": 11,
+      "estoque": 12,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "fechadura",
+        "Brasil"
+      ],
+      "formato": "be",
+      "comprimento": 2.25,
+      "altura": 0.6,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "691",
+      "linha": "000",
+      "coluna": 0,
+      "painel": 0,
+      "estoque": 5,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "ce",
+      "comprimento": 1.6,
+      "altura": 0.5,
+      "saidas": 0
+    }
+  },
+  {
+    "key": {
+      "numero": "694",
+      "linha": "000",
+      "coluna": 0,
+      "painel": 0,
+      "estoque": 3,
+      "marca": "Gold",
+      "tipo": "yale",
+      "similares": [],
+      "tranca": [
+        "",
+        "Pado"
+      ],
+      "formato": "cei",
+      "comprimento": 1.6,
+      "altura": 0.5,
+      "saidas": 0
+    }
+  }
+]

@@ -1,18 +1,18 @@
 const socket = io();
 
-serviços.addEventListener('click', ()=>{
+// serviços.addEventListener('click', ()=>{
 
-})
+// })
 
-popup_localizar_chave.addEventListener('click', ()=>{
-	localização_da_chave.innerHTML = ''
-})
+// popup_localizar_chave.addEventListener('click', ()=>{
+// 	localização_da_chave.innerHTML = ''
+// })
 
-numero_da_chave.addEventListener('keyup', (event)=>{
-	if (event.keyCode == 13) {
-		localizar_chave.click()
-	} 
-})
+// numero_da_chave.addEventListener('keyup', (event)=>{
+// 	if (event.keyCode == 13) {
+// 		localizar_chave.click()
+// 	} 
+// })
 
 const locate = ()=>{
 	let to_search = numero_da_chave.value
