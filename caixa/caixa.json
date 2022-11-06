@@ -5,6 +5,16 @@
     "data": "00/00/22"
   },
   {
+    "serviços": "instalação de miolo",
+    "preço": 40,
+    "data": "01/11/22"
+  },
+  {
+    "gasto": "broca 2.5",
+    "preço": 5,
+    "data": "01/11/22"
+  },
+  {
     "serviços": "abertura",
     "preço": 30,
     "data": "20/10/22"
