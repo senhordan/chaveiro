@@ -5,6 +5,21 @@
     "data": "00/00/22"
   },
   {
+    "serviços": "copia*2",
+    "preço": 10,
+    "data": "25/11/22"
+  },
+  {
+    "gasto": "caixa de grampos",
+    "preço": 10,
+    "data": "24/11/22"
+  },
+  {
+    "serviços": "abertura e copia",
+    "preço": 50,
+    "data": "22/11/22"
+  },
+  {
     "serviços": "instalação de miolo",
     "preço": 40,
     "data": "01/11/22"
