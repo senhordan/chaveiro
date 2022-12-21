@@ -1,8 +1,22 @@
+// total R$58,50 caixa + R$153,77 conta 
+// R$212,27
+
 [
   {
     "serviços": "",
     "preço": 0,
     "data": "00/00/22"
+  },
+  {
+    "gasto": "atualização",
+    "preço": 24,
+    "data": "21/12/22"
+  },
+
+  {
+    "serviços": "abertura",
+    "preço": 20,
+    "data": "13/11/22"
   },
   {
     "serviços": "instalação de miolo",
