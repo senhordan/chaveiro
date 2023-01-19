@@ -1,11 +1,13 @@
-// total R$58,50 caixa + R$153,77 conta 
-// R$212,27
-
 [
   {
-    "serviços": "",
-    "preço": 0,
-    "data": "00/00/22"
+    "serviços": "copia de chave (1126)",
+    "preço": 5,
+    "data": "18/01/23"
+  },
+  {
+    "serviços": "abertura e confecção de duas chaves",
+    "preço": 40,
+    "data": "08/01/23"
   },
   {
     "serviços": "manutenção de cadeado",

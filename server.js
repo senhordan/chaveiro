@@ -36,6 +36,12 @@ const read_file = ()=>{
   return keys
 }
 
+const read_caixa = ()=>{
+  let file = fs.readFileSync('./caixa/caixa.json', 'utf-8')
+  let caixa_json = JSON.parse(file)
+  return caixa_json
+}
+
 const editar_html = require('./modulos/escrever_inventario.js')
 
 const create_backup = (arg)=>{
@@ -67,7 +73,8 @@ app.get('/', (req, res)=>{
 
     res.render('index')
   } else {
-    res.redirect('/login')
+    res.render('index')
+    // res.redirect('/login')
   }
 })
 
@@ -153,6 +160,48 @@ app.post('/inventario', (req, res)=>{
   // }
 })
 
+app.get('/caixa', (req, res)=>{
+  // if (req.session.usuario == usuario && req.session.senha == senha) {
+    io.once('connection', (socket) => {
+
+      socket.on('caixa', ()=>{
+        let caixa_json = read_caixa()
+
+        socket.emit('caixa return', caixa_json)
+      });
+
+      socket.once('disconnect', ()=>{
+        // console.log(socket.id)
+      })
+    })
+
+    res.render('caixa')
+  // } else {
+  //   res.redirect('/login')
+  // }
+
+})
+
+const write_caixa = (entrada)=>{
+  const file = fs.readFileSync('./caixa/caixa.json', 'utf-8')
+  file_updated = `[${entrada}\n${file.slice(2)}`
+  fs.writeFileSync('./caixa/caixa.json', file_updated)
+}
+
+app.post('/caixa', (req, res)=>{
+
+  let data = req.body.data.split('-')
+  data = `${data[2]}/${data[1]}/${data[0].slice(2)}`
+  texto = `
+  {
+    "${req.body.tipo}": "${req.body.descrição}",
+    "preço": ${req.body.preço},
+    "data": "${data}"
+  },`
+  write_caixa(texto)
+
+  res.redirect('caixa')
+})
 const porta = 4000
 // ip = "0.0.0.0"
 

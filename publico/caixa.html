@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../publico/caixa/caixa.css">
+</head>
+<body class="position-relative">
+    <!-- {
+    "serviços": "manutenção de cadeado",
+    "preço": 8,
+    "data": "22/12/22"
+  }, -->
+    
+  <input class="btn btn-outline-primary btn-sm text-center w-100" type="button" data-bs-toggle="collapse" data-bs-target=".form" aria-expanded="false" aria-controls="collapseExample" value="Novo Serviço/Gasto" id="botão_mostrar">
+
+  <form method="post" class="form collapse mt-3">
+    <p class="mb-2">
+      <label class="form-label me-2">Tipo: </label>
+      <select class="form-select w-auto d-inline" name="tipo">
+        <option selected value="serviços">Serviços</option>
+        <option value="gasto">Gasto</option>
+      </select>
+    </p>
+    <p class="mb-2">
+      <label class="form-label me-2">Data: </label>
+      <input type="date" class="form-control w-50 d-inline" id="data" name="data">
+    </p>
+    <p class="mb-2">
+      <label class="form-label me-2">Preço: </label>
+      <input type="number" step="0.01" class="form-control w-50 d-inline" id="preço" name="preço" value="">
+    </p>
+    <p class="mb-2">
+      <label class="form-label me-2">Descrição: </label>
+      <textarea class="form-control" id="descrição" name="descrição" rows="2"></textarea>
+    </p>
+
+    <input class="btn btn-outline-primary btn-sm w-100 my-2" type="submit" value="Adicionar">
+
+  </form>
+
+  <main class="d-flex justify-content-center">
+    <div id="caixa">
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../publico/caixa/caixa.js"></script>
+
+</body></html>
