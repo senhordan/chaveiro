@@ -8,15 +8,34 @@
     "data": "00/00/22"
   },
   {
-    "gasto": "atualização",
-    "preço": 24,
+    "serviços": "manutenção de cadeado",
+    "preço": 8,
+    "data": "22/12/22"
+  },
+  {
+    "gasto": "promoção",
+    "preço": 5,
     "data": "21/12/22"
   },
-
   {
     "serviços": "abertura",
     "preço": 20,
     "data": "13/11/22"
+  },
+  {
+    "serviços": "copia*2",
+    "preço": 10,
+    "data": "25/11/22"
+  },
+  {
+    "gasto": "caixa de grampos",
+    "preço": 10,
+    "data": "24/11/22"
+  },
+  {
+    "serviços": "abertura e copia",
+    "preço": 50,
+    "data": "22/11/22"
   },
   {
     "serviços": "instalação de miolo",

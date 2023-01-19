@@ -84,7 +84,7 @@
       "numero": "72",
       "linha": "a",
       "coluna": 5,
-      "painel": 3,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -564,7 +564,7 @@
       "numero": "1126",
       "linha": "e",
       "coluna": 1,
-      "painel": 0,
+      "painel": 2,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -576,7 +576,7 @@
       "formato": "c",
       "comprimento": 2.05,
       "altura": 0.6,
-      "saidas": 4
+      "saidas": 2
     }
   },
   {
@@ -784,7 +784,7 @@
       "numero": "1030",
       "linha": "f",
       "coluna": 5,
-      "painel": 4,
+      "painel": 5,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -804,7 +804,7 @@
       "numero": "999",
       "linha": "f",
       "coluna": 6,
-      "painel": 5,
+      "painel": 9,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -944,7 +944,7 @@
       "numero": "682",
       "linha": "g",
       "coluna": 6,
-      "painel": 2,
+      "painel": 5,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -956,7 +956,7 @@
       "formato": "c",
       "comprimento": 2.15,
       "altura": 0.75,
-      "saidas": 3
+      "saidas": 2
     }
   },
   {
@@ -1064,7 +1064,7 @@
       "numero": "175",
       "linha": "h",
       "coluna": 5,
-      "painel": 3,
+      "painel": 5,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
@@ -1364,7 +1364,7 @@
       "numero": "707",
       "linha": "j",
       "coluna": 6,
-      "painel": 1,
+      "painel": 4,
       "estoque": 0,
       "marca": "Gold",
       "tipo": "yale",
