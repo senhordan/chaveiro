@@ -8,7 +8,7 @@ const path = require('path')
 let ip = require('ip').address()
 const fs = require('fs')
 // const puppeteer = require('puppeteer-core');
-
+ 
 usuario = 'admin'
 senha = '1sda51d1zxc31z5'
 
