@@ -1,2 +1,2 @@
 # chaveiro
-App feito para gerenciar chaves do estoque e indicar a localização de cada chave no painel
+App feito para gerenciar chaves do estoque, indicar a localização de cada chave no painel e algumas outras funções para agilizar algumas tarefas 
